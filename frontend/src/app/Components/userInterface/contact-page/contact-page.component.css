@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+.contact-page-container {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 100%;
+}
+
+.title-image-container {
+  padding: 30px;
+  background-color: rgb(12, 131, 31);
+}
+
+.title {
+  font-family: "Dosis", sans-serif;
+  font-size: 50px;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+.image-container {
+  background-color: rgb(12, 131, 31);
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 80%;
+  height: auto;
+  background-size: cover;
+}
+
+.content-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 35px;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.heading span {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.email {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.email a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
