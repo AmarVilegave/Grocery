@@ -1,0 +1,86 @@
+.about-page-container {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.container {
+  margin: 30px 0;
+  padding: 0 100px;
+}
+
+.page-title {
+  width: 100%;
+  font-size: 50px;
+  font-weight: 600;
+  display: flex;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-shared-philosophy {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  gap: 50px;
+}
+
+.title {
+  display: flex;
+  font-weight: 600;
+  font-size: 26px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.philosophy-data {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 40px;
+}
+
+.mindsets-and-leverage-points,
+.learning-organisation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.para {
+  padding-right: 40px;
+}
+
+.information {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+  background-color: whitesmoke;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
