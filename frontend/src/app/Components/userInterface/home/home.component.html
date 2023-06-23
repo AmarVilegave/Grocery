@@ -1,0 +1,58 @@
+<div class="home-page-container">
+  <div class="container">
+    <div class="opening-container">
+      <div class="page-title">
+        GET YOUR WEEKLY GROCERIES <span>DELIVERED TO YOUR DOORSTEP</span>
+      </div>
+      <div class="slogan">You need it, we deliver it</div>
+    </div>
+  </div>
+
+  <div class="fruits-card-container">
+    <div class="fresh-fruits-container"></div>
+
+    <div class="content">
+      <div class="heading">100% Original</div>
+      <div class="heading">For a healthier you</div>
+      <div class="heading">Eat fresh, stay healthy</div>
+    </div>
+  </div>
+  <div class="dry-fruits-card-container">
+    <div class="dry-fruits-content">
+      <div class="heading">A healthy choice</div>
+      <div class="heading">Always fresh</div>
+      <div class="heading">Treat yourself with the best dry fruits</div>
+    </div>
+
+    <div class="dry-fruits-container"></div>
+  </div>
+
+  <div class="tags-container">
+    <div
+      *ngFor="let tag of tags"
+      class="image-container"
+    >
+      <img [src]="tag.tagImage" [alt]="tag.tagName" />
+      <div class="tag-name">{{ tag.tagName }}</div>
+    </div>
+  </div>
+
+  <div class="promises-container">
+    <div class="products-container">
+      <div class="basket-image-container"></div>
+      <div class="message">
+        <div>Busy? We got you covered</div>
+        <div>Always at your service</div>
+        <div>Have your groceries delivered in just a few taps</div>
+      </div>
+    </div>
+
+    <div class="delivery-container">
+      <div class="delivery-image-container"></div>
+      <div class="message">
+        <div>Your safety is our priority, delivering with care.</div>
+        <div>A delivery service you can depend on.</div>
+      </div>
+    </div>
+  </div>
+</div>
