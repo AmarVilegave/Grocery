@@ -1,0 +1,152 @@
+.registration-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+  width: 720px;
+  border: 2px solid #ff4b2b;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.registration-details-container {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.registration-details-container input {
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.5px solid black;
+  font-size: 16px;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+
+.password-container {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mobile-no-container {
+  display: flex;
+  /* justify-content: flex-start; */
+  width: 100%;
+}
+
+.mobileNo-date-container {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.date-container {
+  display: flex;
+  /* justify-content: flex-end; */
+  width: 100%;
+}
+
+.submit-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  padding: 8px 30px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(12, 131, 31);
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.submit-btn:hover {
+  opacity: 1;
+}
+
+.submit-btn:active {
+  transform: scale(0.95);
+}
+
+.submit-btn:disabled {
+  background-color: grey;
+}
+
+.mobileNo-date-container input {
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.5px solid black;
+  font-size: 16px;
+}
+
+.password-container input {
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.5px solid black;
+  font-size: 16px;
+}
+
+.errorBorder {
+  border: 0.5px solid red;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}

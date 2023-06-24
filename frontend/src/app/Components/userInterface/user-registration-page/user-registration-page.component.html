@@ -1,1 +1,220 @@
-<p>user-registration-page works!</p>
+<div class="registration-page-container">
+  <div class="container">
+    <form [formGroup]="registrationDetailsForm">
+      <div class="form-container">
+        <div class="registration-details-container">
+          <div class="heading">Full Name :</div>
+          <input
+            [class.errorBorder]="
+              registrationDetailsForm.get('fullName').errors != null &&
+              registrationDetailsForm.get('fullName').touched
+            "
+            formControlName="fullName"
+            type="text"
+          />
+          <div
+            [class.noDisplay]="
+              !registrationDetailsForm.get('fullName').errors ||
+              registrationDetailsForm.get('fullName').untouched
+            "
+          >
+            <div
+              *ngIf="registrationDetailsForm.get('fullName').errors?.required"
+              class="errorMessage"
+            >
+              Full-Name is Required
+            </div>
+            <div
+              *ngIf="registrationDetailsForm.get('fullName').errors?.minlength"
+              class="errorMessage"
+            >
+              Full-Name Must Be Atleast 3 Characters
+            </div>
+          </div>
+        </div>
+        <div class="registration-details-container">
+          <div class="heading">Email :</div>
+          <input
+            [class.errorBorder]="
+              registrationDetailsForm.get('email').errors != null &&
+              registrationDetailsForm.get('email').touched
+            "
+            formControlName="email"
+            type="email"
+          />
+          <div
+            [class.noDisplay]="
+              !registrationDetailsForm.get('email').errors ||
+              registrationDetailsForm.get('email').untouched
+            "
+          >
+            <div
+              *ngIf="registrationDetailsForm.get('email').errors?.required"
+              class="errorMessage"
+            >
+              Email is Required
+            </div>
+          </div>
+        </div>
+        <div class="sub-container">
+          <div class="password-container">
+            <div class="heading">Password :</div>
+            <input
+              [class.errorBorder]="
+                registrationDetailsForm.get('password').errors != null &&
+                registrationDetailsForm.get('password').touched
+              "
+              formControlName="password"
+              type="password"
+            />
+            <div
+              [class.noDisplay]="
+                !registrationDetailsForm.get('password').errors ||
+                registrationDetailsForm.get('password').untouched
+              "
+            >
+              <div
+                *ngIf="registrationDetailsForm.get('password').errors?.required"
+                class="errorMessage"
+              >
+                Password is Required
+              </div>
+
+              <div
+                *ngIf="
+                  registrationDetailsForm.get('password').errors?.minlength
+                "
+                class="errorMessage"
+              >
+                Password Must Be Atleast 8 Characters
+              </div>
+            </div>
+          </div>
+          <div class="password-container">
+            <div class="heading">Confirm Password :</div>
+            <input
+              [class.errorBorder]="
+                registrationDetailsForm.get('confirmPassword').errors != null &&
+                registrationDetailsForm.get('confirmPassword').touched
+              "
+              formControlName="confirmPassword"
+              type="password"
+            />
+            <div
+              [class.noDisplay]="
+                !registrationDetailsForm.get('confirmPassword').errors ||
+                registrationDetailsForm.get('confirmPassword').untouched
+              "
+            >
+              <div
+                *ngIf="
+                  registrationDetailsForm.get('confirmPassword').errors
+                    ?.required
+                "
+                class="errorMessage"
+              >
+                Password is Required
+              </div>
+
+              <div
+                *ngIf="
+                  registrationDetailsForm.get('confirmPassword').errors
+                    ?.minlength
+                "
+                class="errorMessage"
+              >
+                Password Must Be Atleast 8 Characters
+              </div>
+            </div>
+            <div
+              *ngIf="
+                registrationDetailsForm.get('confirmPassword').touched &&
+                registrationDetailsForm.get('confirmPassword').value !==
+                  registrationDetailsForm.get('password').value
+              "
+              class="errorMessage"
+            >
+              Password do not match
+            </div>
+          </div>
+        </div>
+        <div class="sub-container">
+          <div class="mobile-no-container">
+            <div class="mobileNo-date-container">
+              <div class="heading">Mobile.No :</div>
+              <input
+                [class.errorBorder]="
+                  registrationDetailsForm.get('mobileNo').errors != null &&
+                  registrationDetailsForm.get('mobileNo').touched
+                "
+                formControlName="mobileNo"
+                type="number"
+              />
+              <div
+                [class.noDisplay]="
+                  !registrationDetailsForm.get('mobileNo').errors ||
+                  registrationDetailsForm.get('mobileNo').untouched
+                "
+              >
+                <div
+                  *ngIf="
+                    registrationDetailsForm.get('mobileNo').errors?.required
+                  "
+                  class="errorMessage"
+                >
+                  Mobile number is Required
+                </div>
+
+                <div
+                  *ngIf="
+                    registrationDetailsForm.get('mobileNo').errors?.pattern
+                  "
+                  class="errorMessage"
+                >
+                  Number must start from 7,8 or 9 and Number must be of 10
+                  digits
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="date-container">
+            <div class="mobileNo-date-container">
+              <div class="heading">Date of Birth :</div>
+              <input
+                [class.errorBorder]="
+                  registrationDetailsForm.get('dateOfBirth').errors != null &&
+                  registrationDetailsForm.get('dateOfBirth').touched
+                "
+                formControlName="dateOfBirth"
+                type="date"
+              />
+              <div
+                [class.noDisplay]="
+                  !registrationDetailsForm.get('dateOfBirth').errors ||
+                  registrationDetailsForm.get('dateOfBirth').untouched
+                "
+              >
+                <div
+                  *ngIf="
+                    registrationDetailsForm.get('dateOfBirth').errors?.required
+                  "
+                  class="errorMessage"
+                >
+                  Birth Date is Required
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="submit-btn-container">
+          <button
+            [disabled]="checkFormErrors(registrationDetailsForm)"
+            class="submit-btn"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
