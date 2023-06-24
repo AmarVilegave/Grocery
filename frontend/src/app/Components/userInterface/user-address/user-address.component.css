@@ -1,0 +1,141 @@
+.address-container,
+.error-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  margin: 40px auto;
+  width: 720px;
+  border: 2px solid #ff4b2b;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.address-details-container {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 100%;
+}
+
+ input {
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.5px solid black;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border: 0.5px solid black;
+  font-size: 16px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.errorBorder {
+  border: 0.5px solid red;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.add-btn-container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-btn {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  opacity: 0.9;
+  background-color: #3457d5;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.add-btn:hover {
+  opacity: 1;
+}
+
+.add-btn:active {
+  transform: scale(0.95);
+}
+
+.add-btn:disabled {
+  background-color: grey;
+}
+
+.select-btn {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  opacity: 0.9;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.select-btn:hover {
+  opacity: 1;
+}
+

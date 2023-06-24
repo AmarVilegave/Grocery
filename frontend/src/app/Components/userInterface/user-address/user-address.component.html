@@ -1,0 +1,183 @@
+<div  class="address-container">
+  <div class="container">
+    <form [formGroup]="addressDetailsForm" >
+      <div class="form-container">
+        <div class="address-details-container">
+          <div class="heading">Address :</div>
+          <textarea
+            [class.errorBorder]="
+              addressDetailsForm.get('address').errors != null &&
+              addressDetailsForm.get('address').touched
+            "
+            formControlName="address"
+            cols="30"
+            rows="6"
+          ></textarea>
+
+          <div
+            [class.noDisplay]="
+              !addressDetailsForm.get('address').errors ||
+              addressDetailsForm.get('address').untouched
+            "
+          >
+            <div
+              *ngIf="addressDetailsForm.get('address').errors?.required"
+              class="errorMessage"
+            >
+              Address is Required
+            </div>
+            <div
+              *ngIf="addressDetailsForm.get('address').errors?.minlength"
+              class="errorMessage"
+            >
+              Full-Name Must Be Atleast 3 Characters
+            </div>
+          </div>
+        </div>
+        <div class="address-details-container">
+          <div class="heading">Landmark :</div>
+          <input
+            [class.errorBorder]="
+              addressDetailsForm.get('landmark').errors != null &&
+              addressDetailsForm.get('landmark').touched
+            "
+            formControlName="landmark"
+            type="text"
+          />
+
+          <div
+            [class.noDisplay]="
+              !addressDetailsForm.get('landmark').errors ||
+              addressDetailsForm.get('landmark').untouched
+            "
+          >
+            <div
+              *ngIf="addressDetailsForm.get('landmark').errors?.required"
+              class="errorMessage"
+            >
+              Landmark is Required
+            </div>
+          </div>
+        </div>
+        <div class="address-details-container">
+          <div class="heading">State :</div>
+          <input
+            [class.errorBorder]="
+              addressDetailsForm.get('state').errors != null &&
+              addressDetailsForm.get('state').touched
+            "
+            formControlName="state"
+            type="text"
+          />
+
+          <div
+            [class.noDisplay]="
+              !addressDetailsForm.get('state').errors ||
+              addressDetailsForm.get('state').untouched
+            "
+          >
+            <div
+              *ngIf="addressDetailsForm.get('state').errors?.required"
+              class="errorMessage"
+            >
+              State Name is Required
+            </div>
+            <div
+              *ngIf="addressDetailsForm.get('state').errors?.minlength"
+              class="errorMessage"
+            >
+              State Must Be Atleast 3 Characters
+            </div>
+          </div>
+        </div>
+        <div class="address-details-container">
+          <div class="heading">City :</div>
+          <input
+            [class.errorBorder]="
+              addressDetailsForm.get('city').errors != null &&
+              addressDetailsForm.get('city').touched
+            "
+            formControlName="city"
+            type="text"
+          />
+
+          <div
+            [class.noDisplay]="
+              !addressDetailsForm.get('city').errors ||
+              addressDetailsForm.get('city').untouched
+            "
+          >
+            <div
+              *ngIf="addressDetailsForm.get('city').errors?.required"
+              class="errorMessage"
+            >
+              City Name is Required
+            </div>
+            <div
+              *ngIf="addressDetailsForm.get('city').errors?.minlength"
+              class="errorMessage"
+            >
+              City Must Be Atleast 3 Characters
+            </div>
+          </div>
+        </div>
+        <div class="address-details-container">
+          <div class="heading">Pincode :</div>
+          <input
+            [class.errorBorder]="
+              !addressDetailsForm.get('pincode').errors != null &&
+              addressDetailsForm.get('pincode').touched
+            "
+            formControlName="pincode"
+            type="number"
+          />
+
+          <div
+            [class.noDisplay]="
+              !addressDetailsForm.get('pincode').errors ||
+              addressDetailsForm.get('pincode').untouched
+            "
+          >
+            <div
+              *ngIf="addressDetailsForm.get('pincode').errors?.required"
+              class="errorMessage"
+            >
+              Pin-code is Required
+            </div>
+            <div
+              *ngIf="addressDetailsForm.get('pincode').errors?.min"
+              class="errorMessage"
+            >
+              Pin-code Must Be of 6 Characters
+            </div>
+            <div
+              *ngIf="addressDetailsForm.get('pincode').errors?.max"
+              class="errorMessage"
+            >
+              Pin-code Must Be of 6 Characters
+            </div>
+          </div>
+        </div>
+        <div class="add-btn-container">
+          <button
+
+
+            class="select-btn"
+          >
+            Select Address
+          </button>
+
+          <button
+            [disabled]="checkFormErrors(addressDetailsForm)"
+            class="add-btn"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </form>
+    {{ addressDetailsForm.value | json }}
+  </div>
+</div>
+
+
