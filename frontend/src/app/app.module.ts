@@ -8,6 +8,7 @@ import { AboutPageComponent } from './Components/userInterface/about-page/about-
 import { ContactPageComponent } from './Components/userInterface/contact-page/contact-page.component';
 import { UserRegistrationPageComponent } from './Components/userInterface/user-registration-page/user-registration-page.component';
 import { UserAddressComponent } from './Components/userInterface/user-address/user-address.component';
+import { ProductManagementComponent } from './Components/admin-interface/product-management/product-management.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserAddressComponent } from './Components/userInterface/user-address/us
     AboutPageComponent,
     ContactPageComponent,
     UserRegistrationPageComponent,
-    UserAddressComponent
+    UserAddressComponent,
+    ProductManagementComponent
   ],
   imports: [
     BrowserModule,

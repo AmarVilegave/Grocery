@@ -1,0 +1,279 @@
+<div class="product-details-container">
+  <div class="container">
+    <form
+      [formGroup]="productDetailsForm"
+    >
+      <div class="form-container">
+        <div class="product-content-container">
+          <div class="heading">Product Name :</div>
+          <input
+            [class.errorBorder]="
+              productDetailsForm.get('productName').errors != null ||
+              productDetailsForm.get('productName').touched
+            "
+            formControlName="productName"
+            type="text"
+          />
+          <div
+            [class.noDisplay]="
+              !productDetailsForm.get('productName').errors ||
+              productDetailsForm.get('productName').untouched
+            "
+          >
+            <div
+              *ngIf="productDetailsForm.get('productName').errors?.required"
+              class="errorMessage"
+            >
+              Product Name is Required
+            </div>
+          </div>
+        </div>
+        <div class="category-tag-container">
+          <div
+            formGroupName="categoryObject"
+            class="category-tag-content-container"
+          >
+            <div class="tag-content-container">
+              <div class="heading">Tag :</div>
+              <select
+                [class.red]="
+                  productDetailsForm.get('categoryObject.tag').errors != null &&
+                  productDetailsForm.get('categoryObject.tag').touched
+                "
+                formControlName="tag"
+                name="dropdown"
+                id="dropdown"
+              >
+                <option
+                  [selected]="true"
+                >
+                </option>
+              </select>
+              <div
+                [class.noDisplay]="
+                  !productDetailsForm.get('categoryObject.tag').errors ||
+                  productDetailsForm.get('categoryObject.tag').untouched
+                "
+              >
+                <div
+                  *ngIf="
+                    productDetailsForm.get('categoryObject.tag').errors
+                      ?.required
+                  "
+                  class="errorMessage"
+                >
+                  Tag is Required
+                </div>
+              </div>
+              <select
+                formControlName="tag"
+                name="dropdown"
+                id="dropdown"
+              >
+                <option
+                >
+                </option>
+              </select>
+            </div>
+            <div class="category-content-container">
+              <div class="heading">Choose Category :</div>
+              <div >
+                <select
+                  [class.errorBorder]="
+                    productDetailsForm.get('categoryObject.category').errors !=
+                      null &&
+                    productDetailsForm.get('categoryObject.category').touched
+                  "
+                  formControlName="category"
+                  name="dropdown"
+                  id="dropdown"
+                >
+                  <option
+                  >
+                  </option>
+                </select>
+                <div
+                  [class.noDisplay]="
+                    !productDetailsForm.get('categoryObject.category').errors ||
+                    productDetailsForm.get('categoryObject.category').untouched
+                  "
+                >
+                  <div
+                    *ngIf="
+                      productDetailsForm.get('categoryObject.category').errors
+                        ?.required
+                    "
+                    class="errorMessage"
+                  >
+                    Category is Required
+                  </div>
+                </div>
+              </div>
+              <div >
+                <select
+                  formControlName="category"
+                  name="dropdown"
+                  id="dropdown"
+                >
+                  <option
+                  >
+                  </option>
+                </select>
+                <div
+                  [class.noDisplay]="
+                    !productDetailsForm.get('categoryObject.category').errors ||
+                    productDetailsForm.get('categoryObject.category').untouched
+                  "
+                >
+                  <div
+                    *ngIf="
+                      productDetailsForm.get('categoryObject.category').errors
+                        ?.required
+                    "
+                    class="errorMessage"
+                  >
+                    Category is Required
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-content-container">
+          <div class="heading">Price :</div>
+          <input
+            [class.errorBorder]="productDetailsForm.get('price').errors != null"
+            formControlName="price"
+            type="number"
+          />
+          <div
+            [class.noDisplay]="
+              !productDetailsForm.get('price').errors ||
+              productDetailsForm.get('price').untouched
+            "
+          >
+            <div
+              *ngIf="productDetailsForm.get('price').errors?.required"
+              class="errorMessage"
+            >
+              Price is Required
+            </div>
+          </div>
+        </div>
+        <div class="product-content-container">
+          <div class="heading">Weight :</div>
+          <input
+            [class.errorBorder]="
+              productDetailsForm.get('weight').errors != null &&
+              productDetailsForm.get('weight').touched
+            "
+            formControlName="weight"
+            type="text"
+          />
+          <div
+            [class.noDisplay]="
+              !productDetailsForm.get('weight').errors ||
+              productDetailsForm.get('weight').untouched
+            "
+          >
+            <div
+              *ngIf="productDetailsForm.get('weight').errors?.required"
+              class="errorMessage"
+            >
+              Weight is Required
+            </div>
+          </div>
+        </div>
+        <div class="product-content-container">
+          <div class="heading">Quantity :</div>
+          <input
+            [class.errorBorder]="
+              productDetailsForm.get('quantity').errors != null &&
+              productDetailsForm.get('quantity').pristine
+            "
+            formControlName="quantity"
+            type="number"
+          />
+          <div
+            [class.noDisplay]="
+              !productDetailsForm.get('quantity').errors ||
+              productDetailsForm.get('quantity').untouched
+            "
+          >
+            <div
+              *ngIf="productDetailsForm.get('quantity').errors?.required"
+              class="errorMessage"
+            >
+              Quantity is Required
+            </div>
+            <div
+              *ngIf="productDetailsForm.get('quantity').errors?.pattern"
+              class="errorMessage"
+            >
+              Quantity must be of 2 digits
+            </div>
+          </div>
+        </div>
+        <div  class="product-content-container">
+          <div class="heading">Image :</div>
+          <input
+            [class.errorBorder]="
+              productDetailsForm.get('image').errors != null &&
+              productDetailsForm.get('image').touched
+            "
+            formControlName="image"
+            type="text"
+          />
+          <div
+            [class.noDisplay]="
+              !productDetailsForm.get('image').errors ||
+              productDetailsForm.get('image').untouched
+            "
+          >
+            <div
+              *ngIf="productDetailsForm.get('image').errors?.required"
+              class="errorMessage"
+            >
+              Image is Required
+            </div>
+          </div>
+        </div>
+
+        <div  class="product-content-container">
+          <div class="heading">Description :</div>
+          <input
+            [class.errorBorder]="
+              productDetailsForm.get('description').errors != null &&
+              productDetailsForm.get('description').touched
+            "
+            formControlName="description"
+            type="text"
+          />
+          <div
+            [class.noDisplay]="
+              !productDetailsForm.get('description').errors ||
+              productDetailsForm.get('description').untouched
+            "
+          >
+            <div
+              *ngIf="productDetailsForm.get('description').errors?.required"
+              class="errorMessage"
+            >
+              Description is Required
+            </div>
+          </div>
+        </div>
+
+        <div class="submit-btn-container">
+          <button
+            [disabled]="checkFormErrors(productDetailsForm)"
+            class="submit-btn"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+    <!-- {{ productDetailsForm.value | json }} -->
+  </div>
+</div>

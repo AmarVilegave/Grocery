@@ -53,7 +53,7 @@ export class UserRegistrationPageComponent implements OnInit {
         this.checkFormErrors(dataObj.get(key) as FormGroup);
       }
     });
-    if (controlErrors['length'] > 0) {
+    if (controlErrors.length > 0) {
       return true;
     } else if (password !== confirmPassword) {
       return true;
