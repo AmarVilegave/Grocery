@@ -1,0 +1,212 @@
+<div class="admin-registration-container">
+  <div class="container">
+    <form [formGroup]="adminRegistrationForm" >
+      <div class="form-container">
+        <div class="details-container">
+          <div class="heading">Full Name :</div>
+          <input
+            [class.errorBorder]="
+              adminRegistrationForm.get('fullName').errors != null &&
+              adminRegistrationForm.get('fullName').touched
+            "
+            formControlName="fullName"
+            type="text"
+          />
+          <div
+            [class.noDisplay]="
+              !adminRegistrationForm.get('fullName').errors ||
+              adminRegistrationForm.get('fullName').untouched
+            "
+          >
+            <div
+              *ngIf="adminRegistrationForm.get('fullName').errors?.required"
+              class="errorMessage"
+            >
+              Full-Name is Required
+            </div>
+            <div
+              *ngIf="adminRegistrationForm.get('fullName').errors?.minlength"
+              class="errorMessage"
+            >
+              Full-Name Must Be Atleast 3 Characters
+            </div>
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="heading">Email :</div>
+          <input
+            [class.errorBorder]="
+              adminRegistrationForm.get('email').errors != null &&
+              adminRegistrationForm.get('email').touched
+            "
+            formControlName="email"
+            type="email"
+          />
+
+          <div
+            [class.noDisplay]="
+              !adminRegistrationForm.get('email').errors ||
+              adminRegistrationForm.get('email').untouched
+            "
+          >
+            <div
+              *ngIf="adminRegistrationForm.get('email').errors?.required"
+              class="errorMessage"
+            >
+              Email is required.
+            </div>
+          </div>
+        </div>
+        <div class="mobileNo-role">
+          <div class="details-container">
+            <div class="heading">Password :</div>
+            <input
+              [class.errorBorder]="
+                adminRegistrationForm.get('password').errors != null &&
+                adminRegistrationForm.get('password').touched
+              "
+              formControlName="password"
+              type="password"
+            />
+
+            <div
+              [class.noDisplay]="
+                !adminRegistrationForm.get('password').errors ||
+                adminRegistrationForm.get('password').untouched
+              "
+            >
+              <div
+                *ngIf="adminRegistrationForm.get('password').errors?.required"
+                class="errorMessage"
+              >
+                Password is required
+              </div>
+              <div
+                *ngIf="adminRegistrationForm.get('password').errors?.minlength"
+                class="errorMessage"
+              >
+                password must be at least of 8 characters
+              </div>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="heading">Confirm Password :</div>
+            <input
+              [class.errorBorder]="
+                adminRegistrationForm.get('confirmPassword').errors != null &&
+                adminRegistrationForm.get('confirmPassword').touched
+              "
+              formControlName="confirmPassword"
+              type="password"
+            />
+
+            <div
+              [class.noDisplay]="
+                !adminRegistrationForm.get('confirmPassword').errors ||
+                adminRegistrationForm.get('confirmPassword').untouched
+              "
+            >
+              <div
+                *ngIf="
+                  adminRegistrationForm.get('confirmPassword').errors?.required
+                "
+                class="errorMessage"
+              >
+                Password is required
+              </div>
+              <div
+                *ngIf="
+                  adminRegistrationForm.get('confirmPassword').errors?.minlength
+                "
+                class="errorMessage"
+              >
+                password must be at least of 8 characters
+              </div>
+            </div>
+            <div
+              *ngIf="
+                adminRegistrationForm.get('confirmPassword').touched &&
+                adminRegistrationForm.get('confirmPassword').value !==
+                  adminRegistrationForm.get('password').value
+              "
+              class="errorMessage"
+            >
+              Password do not match
+            </div>
+          </div>
+        </div>
+        <div class="mobileNo-role">
+          <div class="details-container">
+            <div class="heading">Mobile No :</div>
+            <input
+              [class.errorBorder]="
+                adminRegistrationForm.get('mobileNo').errors != null &&
+                adminRegistrationForm.get('mobileNo').touched
+              "
+              formControlName="mobileNo"
+              type="number"
+            />
+
+            <div
+              [class.noDisplay]="
+                !adminRegistrationForm.get('mobileNo').errors ||
+                adminRegistrationForm.get('mobileNo').untouched
+              "
+            >
+              <div
+                *ngIf="adminRegistrationForm.get('mobileNo').errors?.required"
+                class="errorMessage"
+              >
+                Mobile number is Required
+              </div>
+              <div
+                *ngIf="adminRegistrationForm.get('mobileNo').errors?.pattern"
+                class="errorMessage"
+              >
+                Number must start from 7,8 or 9 and Number must be of 10 digits
+              </div>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="heading">Role :</div>
+            <select
+              [class.errorBorder]="
+                adminRegistrationForm.get('role').errors != null &&
+                adminRegistrationForm.get('role').touched
+              "
+              formControlName="role"
+              name="dropdown"
+              id="dropdown"
+            >
+              <option *ngFor="let role of roles" [value]="role">
+                {{ role }}
+              </option>
+            </select>
+
+            <div
+              [class.noDisplay]="
+                !adminRegistrationForm.get('role').errors ||
+                adminRegistrationForm.get('role').untouched
+              "
+            >
+              <div
+                *ngIf="adminRegistrationForm.get('role').errors?.required"
+                class="errorMessage"
+              >
+                Role is required
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="submit-btn-container">
+          <button
+            [disabled]="checkFormErrors(adminRegistrationForm)"
+            class="submit-btn"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

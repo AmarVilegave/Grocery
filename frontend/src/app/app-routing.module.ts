@@ -6,6 +6,7 @@ import { ContactPageComponent } from './Components/userInterface/contact-page/co
 import { UserRegistrationPageComponent } from './Components/userInterface/user-registration-page/user-registration-page.component';
 import { UserAddressComponent } from './Components/userInterface/user-address/user-address.component';
 import { ProductManagementComponent } from './Components/admin-interface/product-management/product-management.component';
+import { AdminRegistrationComponent } from './Components/admin-interface/admin-registration/admin-registration.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:'contact', component:ContactPageComponent},
   {path:'user-registration', component:UserRegistrationPageComponent},
   {path:'user-address', component:UserAddressComponent},
-  {path:'product-management', component:ProductManagementComponent}
+  {path:'product-management', component:ProductManagementComponent},
+  {path:'admin-registration', component:AdminRegistrationComponent}
 ];
 
 @NgModule({
