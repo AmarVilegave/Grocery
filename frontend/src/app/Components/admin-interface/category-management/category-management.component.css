@@ -1,0 +1,120 @@
+.category-details-container {
+  background: transparent;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+  max-width: 720px;
+  border: 2px solid #ff4b2b;
+  padding: 30px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-tag-container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.category-tag-content-container {
+  width: 50%;
+  overflow: hidden;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input {
+  border: 0.5px solid black;
+
+}
+
+.category-tag-content-container input {
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0 10px 0;
+  font-size: 16px;
+}
+
+.category-tag-content-container select {
+  height: 35px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
+.category-tag-content-container option {
+  font-size: 16px;
+}
+
+.add-btn-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.add-btn {
+  padding: 8px 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(12, 131, 31);
+  color: white;
+  opacity: 0.9;
+}
+
+.add-btn:active {
+  transform: scale(0.95);
+}
+
+.add-btn:hover {
+  opacity: 1;
+}
+
+.add-btn:disabled {
+  background-color: grey;
+}
+
+.errorBorder {
+  border: 0.5px solid red;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}

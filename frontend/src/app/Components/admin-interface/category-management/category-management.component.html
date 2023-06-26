@@ -1,1 +1,62 @@
-<p>category-management works!</p>
+<div class="category-details-container">
+  <div class="container">
+    <form
+      [formGroup]="categoryTagDetailsForm"
+
+    >
+      <div class="form-container">
+        <div  class="category-tag-container">
+          <div class="category-tag-content-container">
+            <div class="heading">Tag Name :</div>
+            <input
+              [class.errorBorder]="
+                categoryTagDetailsForm.get('tag').errors != null &&
+                categoryTagDetailsForm.get('tag').touched
+              "
+              formControlName="tag"
+              type="text"
+            />
+            <div
+              [class.noDisplay]="
+                !categoryTagDetailsForm.get('tag').errors ||
+                categoryTagDetailsForm.get('tag').untouched
+              "
+            >
+              <div
+                *ngIf="categoryTagDetailsForm.get('tag').errors?.required"
+                class="errorMessage"
+              >
+                Tag is Required
+              </div>
+            </div>
+          </div>
+          <div class="category-tag-content-container">
+            <div class="heading">Category Name :</div>
+            <input
+            [class.errorBorder]="
+            categoryTagDetailsForm.get('category').errors != null &&
+            categoryTagDetailsForm.get('category').touched
+          "
+              formControlName="category"
+              type="text"
+            />
+
+            <div
+              [class.noDisplay]="
+                !categoryTagDetailsForm.get('category').errors ||
+                categoryTagDetailsForm.get('category').untouched
+              "
+            >
+              <div
+                *ngIf="categoryTagDetailsForm.get('category').errors?.required"
+                class="errorMessage"
+              >
+                Category is Required
+              </div>
+            </div>
+          </div>
+        </div>
+        <div  class="add-btn-container">
+          <button [disabled]="checkFormErrors(categoryTagDetailsForm)"
+          class="add-btn">Add</button>
+        </div>
