@@ -8,7 +8,7 @@ const categorySchema = new mongoose.Schema({
 
 const Category = mongoose.model("Category", categorySchema);
 
-function validateCategoory(category) {
+function validateCategory(category) {
   const schema = Joi.object({
     category: Joi.string().required(),
     tag: Joi.string().required(),

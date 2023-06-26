@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/userInterface/home/home.component';
 import { AboutPageComponent } from './Components/userInterface/about-page/about-page.component';
@@ -11,6 +12,8 @@ import { UserAddressComponent } from './Components/userInterface/user-address/us
 import { ProductManagementComponent } from './Components/admin-interface/product-management/product-management.component';
 import { AdminRegistrationComponent } from './Components/admin-interface/admin-registration/admin-registration.component';
 import { CategoryManagementComponent } from './Components/admin-interface/category-management/category-management.component';
+import { FooterComponent } from './Components/userInterface/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +25,15 @@ import { CategoryManagementComponent } from './Components/admin-interface/catego
     UserAddressComponent,
     ProductManagementComponent,
     AdminRegistrationComponent,
-    CategoryManagementComponent
+    CategoryManagementComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

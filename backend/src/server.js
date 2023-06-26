@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const config = require("config");
 const express = require("express");
 const app = express();
+const categories = require("./routes/categoryRoute");
+const products = require("./routes/productRoute");
 const cors = require("cors");
 
 
@@ -12,6 +14,8 @@ mongoose
 
 app.use(express.json());
 app.use(cors());
+app.use("/api/categories", categories);
+
 
 const port = 8088;
 
