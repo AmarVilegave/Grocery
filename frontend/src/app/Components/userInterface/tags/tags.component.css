@@ -1,0 +1,42 @@
+.tags-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  border: 2px solid #ff4b2b;
+  overflow: hidden;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tag:hover {
+  color: white;
+  background-color: #ff4b2b;
+}
+
+.activeTag {
+  color: white;
+  background-color: #ff4b2b;
+}

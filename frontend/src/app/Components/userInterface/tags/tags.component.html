@@ -1,0 +1,12 @@
+<div class="tags-container">
+  <div class="container">
+    <div class="content-container" *ngFor="let tag of tagObject">
+      <a
+        (click)="selectActiveTag(tag)"
+        routerLink="/card/{{ tag }}"
+        class="tag {{ toggleActiveTag(tag) ? 'activeTag' : '' }}"
+        >{{ tag }}</a
+      >
+    </div>
+  </div>
+</div>

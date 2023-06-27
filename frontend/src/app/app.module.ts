@@ -15,6 +15,7 @@ import { CategoryManagementComponent } from './Components/admin-interface/catego
 import { FooterComponent } from './Components/userInterface/footer/footer.component';
 import { HeaderComponent } from './Components/userInterface/header/header.component';
 import { CardComponent } from './Components/userInterface/card/card.component';
+import { TagsComponent } from './Components/userInterface/tags/tags.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { CardComponent } from './Components/userInterface/card/card.component';
     CategoryManagementComponent,
     FooterComponent,
     HeaderComponent,
-    CardComponent
+    CardComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,
