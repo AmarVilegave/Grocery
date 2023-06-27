@@ -13,6 +13,8 @@ import { ProductManagementComponent } from './Components/admin-interface/product
 import { AdminRegistrationComponent } from './Components/admin-interface/admin-registration/admin-registration.component';
 import { CategoryManagementComponent } from './Components/admin-interface/category-management/category-management.component';
 import { FooterComponent } from './Components/userInterface/footer/footer.component';
+import { HeaderComponent } from './Components/userInterface/header/header.component';
+import { CardComponent } from './Components/userInterface/card/card.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { FooterComponent } from './Components/userInterface/footer/footer.compon
     ProductManagementComponent,
     AdminRegistrationComponent,
     CategoryManagementComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
