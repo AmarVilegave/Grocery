@@ -9,6 +9,7 @@ import { ProductManagementComponent } from './Components/admin-interface/product
 import { AdminRegistrationComponent } from './Components/admin-interface/admin-registration/admin-registration.component';
 import { CategoryManagementComponent } from './Components/admin-interface/category-management/category-management.component';
 import { TagsComponent } from './Components/userInterface/tags/tags.component';
+import { CardComponent } from './Components/userInterface/card/card.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -20,7 +21,10 @@ const routes: Routes = [
   {path:'product-management', component:ProductManagementComponent},
   {path:'admin-registration', component:AdminRegistrationComponent},
   {path:'category-management', component:CategoryManagementComponent},
-  {path:'tags', component:TagsComponent}
+  {path:'tags', component:TagsComponent},
+  {path:'card', component:CardComponent},
+  { path: 'card/:tag', component: CardComponent },
+  { path: 'card/:tag/:category', component: CardComponent },
 ];
 
 @NgModule({

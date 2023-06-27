@@ -1,1 +1,75 @@
-<p>card works!</p>
+<div class="card-container">
+  <div class="tag-container">
+    <app-tags></app-tags>
+  </div>
+  <div class="main-container">
+    <div class="left-container">
+      <div class="categories-container">
+        <div
+          *ngFor="let category of categories; let i = index"
+          (click)="filterCategories(category)"
+          class="category-name {{
+            toggleBorder(category) ? 'changeBorderColor' : ''
+          }}"
+        >
+          {{ category }}
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="product-container">
+        <div
+          *ngFor="let product of products; let i = index"
+          class="card"
+          id="{{ product._id }}"
+        >
+          <a routerLink="/product-page/{{ product._id }}"
+            ><img [src]="product.image[0]" [alt]="product.name"
+          /></a>
+
+          <div class="details">
+            <div class="product-name">
+              <div class="name">
+                {{ product.name }}
+              </div>
+              <span
+              >
+                <i
+                  class="fa-solid fa-heart"
+                ></i>
+              </span>
+            </div>
+
+            <div class="weight-price-container">
+              <div class="weight">
+                {{ product.weight }}
+              </div>
+              <div class="price">
+                {{ product.price | currency : "INR" }}
+              </div>
+            </div>
+
+            <div class="add">
+              <button
+                class="add-btn"
+              >
+                Add
+              </button>
+              <div class="btns" >
+                <div
+                  class="fa-solid fa-minus minus"
+                ></div>
+
+                1
+                <div
+                  class="fa-solid fa-plus plus"
+                  disabled="checkPlusQuantity(product.id)"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

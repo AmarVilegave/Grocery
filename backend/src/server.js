@@ -15,6 +15,8 @@ mongoose
 app.use(express.json());
 app.use(cors());
 app.use("/api/categories", categories);
+app.use("/api/products", products);
+
 
 
 const port = 8088;
