@@ -6,6 +6,11 @@ const categories = require("./routes/categoryRoute");
 const products = require("./routes/productRoute");
 const cors = require("cors");
 
+if (!config.get("jwtPrivateKey")) {
+  console.error("FATAL ERROR: jwtPrivateKey is not defined");
+  process.exit(1);
+}
+
 
 mongoose
   .connect("mongodb://127.0.0.1:27017/grocery-shopping")
