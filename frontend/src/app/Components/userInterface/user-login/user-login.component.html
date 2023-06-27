@@ -1,0 +1,68 @@
+<div class="login-page-container">
+  <div class="container">
+    <form [formGroup]="loginDetailsForm">
+      <div class="form-container">
+        <div class="user-details-container">
+          <div class="heading">Email :</div>
+          <input [class.errorBorder]="
+          loginDetailsForm.get('email').errors != null &&
+          loginDetailsForm.get('email').touched
+        " formControlName="email" type="email" />
+
+        <div
+            [class.noDisplay]="
+              !loginDetailsForm.get('email').errors ||
+              loginDetailsForm.get('email').untouched
+            "
+          >
+            <div
+              *ngIf="loginDetailsForm.get('email').errors?.required"
+              class="errorMessage"
+            >
+              Email is Required
+            </div>
+            <div
+              *ngIf="loginDetailsForm.get('email').errors?.pattern"
+              class="errorMessage"
+            >
+              Please enter Your email address in format: youname@example.com
+            </div>
+          </div>
+        </div>
+        <div class="user-details-container">
+          <div class="heading">Password :</div>
+          <input [class.errorBorder]="
+          loginDetailsForm.get('password').errors != null &&
+          loginDetailsForm.get('password').touched
+        " formControlName="password" type="password" />
+        <div
+            [class.noDisplay]="
+              !loginDetailsForm.get('password').errors ||
+              loginDetailsForm.get('password').untouched
+            "
+          >
+            <div
+              *ngIf="loginDetailsForm.get('password').errors?.required"
+              class="errorMessage"
+            >
+              Password is Required
+            </div>
+            <div
+              *ngIf="loginDetailsForm.get('password').errors?.minlength"
+              class="errorMessage"
+            >
+            Password Must Be At least 8 Characters
+          </div>
+          </div>
+        </div>
+        <div class="login-btn">
+          <button>Login</button>
+        </div>
+
+        <div class="registration-page">
+          <a routerLink="/registration">Create New Account</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

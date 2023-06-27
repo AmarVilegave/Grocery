@@ -16,6 +16,8 @@ import { FooterComponent } from './Components/userInterface/footer/footer.compon
 import { HeaderComponent } from './Components/userInterface/header/header.component';
 import { CardComponent } from './Components/userInterface/card/card.component';
 import { TagsComponent } from './Components/userInterface/tags/tags.component';
+import { UserLoginComponent } from './Components/userInterface/user-login/user-login.component';
+import { AdminLoginComponent } from './Components/admin-interface/admin-login/admin-login.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { TagsComponent } from './Components/userInterface/tags/tags.component';
     FooterComponent,
     HeaderComponent,
     CardComponent,
-    TagsComponent
+    TagsComponent,
+    UserLoginComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,

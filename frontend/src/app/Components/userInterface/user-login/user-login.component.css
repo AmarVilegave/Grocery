@@ -1,0 +1,101 @@
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+  width: 480px;
+  border: 2px solid #ff4b2b;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.user-details-container {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+input {
+  border: 0.5px solid black;
+}
+
+.user-details-container input {
+  padding: 8px 20px;
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-btn button {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(12, 131, 31);
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.registration-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorBorder {
+  border: 0.5px solid red;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
