@@ -2,15 +2,16 @@
   <div class="container">
     <form
       [formGroup]="productDetailsForm"
+      (ngSubmit)="isAddProduct ? addNewProduct() : updateProduct(product._id)"
     >
       <div class="form-container">
         <div class="product-content-container">
           <div class="heading">Product Name :</div>
           <input
-            [class.errorBorder]="
-              productDetailsForm.get('productName').errors != null ||
-              productDetailsForm.get('productName').touched
-            "
+          [class.errorBorder]="
+          productDetailsForm.get('productName').errors != null &&
+          productDetailsForm.get('productName').touched
+        "
             formControlName="productName"
             type="text"
           />
@@ -40,13 +41,17 @@
                   productDetailsForm.get('categoryObject.tag').errors != null &&
                   productDetailsForm.get('categoryObject.tag').touched
                 "
+                *ngIf="!product._id"
                 formControlName="tag"
                 name="dropdown"
                 id="dropdown"
               >
                 <option
-                  [selected]="true"
+                *ngFor="let tag of tagObject"
+                [selected]="true"
+                [value]="tag"
                 >
+                {{tag}}
                 </option>
               </select>
               <div
@@ -66,18 +71,23 @@
                 </div>
               </div>
               <select
+              *ngIf="product._id"
                 formControlName="tag"
                 name="dropdown"
                 id="dropdown"
               >
                 <option
+                *ngFor="let tag of tagObject"
+                  [selected]="product.category.tag === tag"
+                  [value]="tag"
                 >
+                {{tag}}
                 </option>
               </select>
             </div>
             <div class="category-content-container">
               <div class="heading">Choose Category :</div>
-              <div >
+              <div *ngIf="!product._id" >
                 <select
                   [class.errorBorder]="
                     productDetailsForm.get('categoryObject.category').errors !=
@@ -89,7 +99,10 @@
                   id="dropdown"
                 >
                   <option
+                  *ngFor="let category of categoryObject"
+                    [value]="category.category"
                   >
+                  {{category.category}}
                   </option>
                 </select>
                 <div
@@ -109,14 +122,18 @@
                   </div>
                 </div>
               </div>
-              <div >
+              <div *ngIf="product._id" >
                 <select
                   formControlName="category"
                   name="dropdown"
                   id="dropdown"
                 >
                   <option
+                  *ngFor="let category of categoryObject"
+                    [selected]="product.category.category === category.category"
+                    [value]="category.category"
                   >
+                  {{category.category}}
                   </option>
                 </select>
                 <div
@@ -142,7 +159,10 @@
         <div class="product-content-container">
           <div class="heading">Price :</div>
           <input
-            [class.errorBorder]="productDetailsForm.get('price').errors != null"
+          [class.errorBorder]="
+          productDetailsForm.get('price').errors != null &&
+          productDetailsForm.get('price').touched
+        "
             formControlName="price"
             type="number"
           />
@@ -187,9 +207,9 @@
         <div class="product-content-container">
           <div class="heading">Quantity :</div>
           <input
-            [class.errorBorder]="
+          [class.errorBorder]="
               productDetailsForm.get('quantity').errors != null &&
-              productDetailsForm.get('quantity').pristine
+              productDetailsForm.get('quantity').touched
             "
             formControlName="quantity"
             type="number"
@@ -214,7 +234,7 @@
             </div>
           </div>
         </div>
-        <div  class="product-content-container">
+        <div *ngIf="!product._id"  class="product-content-container">
           <div class="heading">Image :</div>
           <input
             [class.errorBorder]="
@@ -239,7 +259,7 @@
           </div>
         </div>
 
-        <div  class="product-content-container">
+        <div *ngIf="!product._id" class="product-content-container">
           <div class="heading">Description :</div>
           <input
             [class.errorBorder]="
