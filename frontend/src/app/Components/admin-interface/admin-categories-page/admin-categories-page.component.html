@@ -1,0 +1,63 @@
+<div class="admin-container">
+  <div class="container">
+    <div class="title-container">
+      <div class="title">Categories</div>
+    </div>
+    <div class="border">
+      <div class="add-new-product-container">
+        <div class="search-bar">
+          <input
+            #search
+            [value]="searchTerm"
+            type="text"
+            placeholder="Search Category or Tag"
+            (keyup)="searchCategoryAndTag(search.value)"
+          />
+        </div>
+
+        <div class="add-new-product-heading">
+          <div>Add New Category</div>
+          <a routerLink="/category-details"
+            ><button class="add-new-product-btn">Add</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <div class="border">
+        <div class="headings">
+          <div class="sub-heading">Category</div>
+          <div class="sub-heading">Tag</div>
+          <div class="sub-heading">Edit</div>
+          <div class="sub-heading">Remove</div>
+        </div>
+      </div>
+      <div *ngFor="let category of categoriesFilter">
+        <div class="border">
+          <div class="tags-and-categories">
+            <div class="small-container">
+              <div class="name">{{ category.category }}</div>
+            </div>
+            <div class="small-container">
+              <div class="name">{{ category.tag }}</div>
+            </div>
+            <div class="small-container">
+              <a routerLink="/category-details/{{ category._id }}">
+                <button class="edit-btn">Edit</button>
+              </a>
+            </div>
+            <div class="small-container">
+              <button
+                (click)="removeCategoryAndTag(category._id)"
+                class="remove-btn"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

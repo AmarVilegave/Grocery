@@ -18,6 +18,7 @@ import { CardComponent } from './Components/userInterface/card/card.component';
 import { TagsComponent } from './Components/userInterface/tags/tags.component';
 import { UserLoginComponent } from './Components/userInterface/user-login/user-login.component';
 import { AdminLoginComponent } from './Components/admin-interface/admin-login/admin-login.component';
+import { AdminCategoriesPageComponent } from './Components/admin-interface/admin-categories-page/admin-categories-page.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { AdminLoginComponent } from './Components/admin-interface/admin-login/ad
     CardComponent,
     TagsComponent,
     UserLoginComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    AdminCategoriesPageComponent
   ],
   imports: [
     BrowserModule,
