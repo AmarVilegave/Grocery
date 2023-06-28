@@ -13,6 +13,7 @@ import { CardComponent } from './Components/userInterface/card/card.component';
 import { AdminLoginComponent } from './Components/admin-interface/admin-login/admin-login.component';
 import { UserLoginComponent } from './Components/userInterface/user-login/user-login.component';
 import { AdminCategoriesPageComponent } from './Components/admin-interface/admin-categories-page/admin-categories-page.component';
+import { AdminProductsPageComponent } from './Components/admin-interface/admin-products-page/admin-products-page.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -30,7 +31,8 @@ const routes: Routes = [
   { path: 'card/:tag/:category', component: CardComponent },
   {path:'admin-login', component:AdminLoginComponent},
   {path:'user-login', component:UserLoginComponent},
-  {path:'admin-categories', component:AdminCategoriesPageComponent}
+  {path:'admin-categories', component:AdminCategoriesPageComponent},
+  {path:'admin-products', component:AdminProductsPageComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,58 @@
+<div class="admin-container">
+  <div class="container">
+    <div class="title-container">
+      <div class="title">Products</div>
+    </div>
+    <div class="border">
+      <div class="add-new-product-container">
+        <div class="search-bar">
+          <input
+            #search
+            (keyup)="searchProducts(search.value)"
+            [value]="searchTerm"
+            type="text"
+            placeholder="Search Product"
+          />
+        </div>
+
+        <div class="add-new-product-heading">
+          <div class="add-new-product-heading">Add New Product</div>
+          <div>
+            <a routerLink="/product-details"
+              ><button class="add-new-product-btn">Add</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <div class="border">
+        <div class="headings">
+          <div class="sub-heading">Product</div>
+          <div class="sub-heading">Edit</div>
+          <div class="sub-heading">Remove</div>
+        </div>
+      </div>
+      <div *ngFor="let product of productsFilter">
+        <div class="border">
+          <div class="products">
+            <div class="small-container">
+              <div class="product-name">{{ product.name }}</div>
+            </div>
+            <div class="small-container">
+              <a routerLink="/product-details/{{ product._id }}">
+                <button class="edit-btn">Edit</button>
+              </a>
+            </div>
+            <div class="small-container">
+              <button (click)="removeProduct(product._id)" class="remove-btn">
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
