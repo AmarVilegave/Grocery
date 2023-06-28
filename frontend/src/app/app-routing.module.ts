@@ -23,8 +23,10 @@ const routes: Routes = [
   {path:'user-registration', component:UserRegistrationPageComponent},
   {path:'user-address', component:UserAddressComponent},
   {path:'product-management', component:ProductManagementComponent},
+  {path:'product-management/:id', component:ProductManagementComponent},
   {path:'admin-registration', component:AdminRegistrationComponent},
   {path:'category-management', component:CategoryManagementComponent},
+  {path:'category-management/:id', component:CategoryManagementComponent},
   {path:'tags', component:TagsComponent},
   {path:'card', component:CardComponent},
   { path: 'card/:tag', component: CardComponent },
@@ -32,7 +34,8 @@ const routes: Routes = [
   {path:'admin-login', component:AdminLoginComponent},
   {path:'user-login', component:UserLoginComponent},
   {path:'admin-categories', component:AdminCategoriesPageComponent},
-  {path:'admin-products', component:AdminProductsPageComponent}
+  {path:'admin-products', component:AdminProductsPageComponent},
+
 ];
 
 @NgModule({

@@ -2,10 +2,15 @@
   <div class="container">
     <form
       [formGroup]="categoryTagDetailsForm"
+      (ngSubmit)="
+        isAddCategory
+          ? addNewCategoryAndTag()
+          : updateCategoryAndTag(category._id)
+      "
 
     >
       <div class="form-container">
-        <div  class="category-tag-container">
+        <div *ngIf="!category._id"  class="category-tag-container">
           <div class="category-tag-content-container">
             <div class="heading">Tag Name :</div>
             <input
@@ -56,7 +61,36 @@
             </div>
           </div>
         </div>
-        <div  class="add-btn-container">
-          <button [disabled]="checkFormErrors(categoryTagDetailsForm)"
-          class="add-btn">Add</button>
+
+
+        <div *ngIf="category._id" class="category-tag-container">
+          <div class="category-tag-content-container">
+            <div class="heading">Tag Name :</div>
+            <input formControlName="tag" type="text" [value]="category.tag" />
+          </div>
+          <div class="category-tag-content-container">
+            <div class="heading">Category Name :</div>
+            <input
+              formControlName="category"
+              type="text"
+              [value]="category.category"
+            />
+          </div>
         </div>
+
+        <div *ngIf="!category._id" class="add-btn-container">
+          <button class="add-btn">Add</button>
+        </div>
+        <div *ngIf="category._id" class="update-btn-container">
+          <button
+            [disabled]="checkFormErrors(categoryTagDetailsForm)"
+            class="update-btn"
+          >
+            Update
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

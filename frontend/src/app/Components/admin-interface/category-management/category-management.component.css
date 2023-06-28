@@ -72,14 +72,15 @@ input {
   font-size: 16px;
 }
 
-.add-btn-container {
+.add-btn-container, .update-btn-container {
   margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.add-btn {
+.add-btn,
+.update-btn {
   padding: 8px 30px;
   cursor: pointer;
   outline: none;
@@ -93,15 +94,21 @@ input {
   opacity: 0.9;
 }
 
-.add-btn:active {
+.add-btn:active,
+.update-btn:active {
   transform: scale(0.95);
 }
 
-.add-btn:hover {
+.add-btn:hover,
+.update-btn:hover {
   opacity: 1;
 }
 
 .add-btn:disabled {
+  background-color: grey;
+}
+
+.update-btn:disabled {
   background-color: grey;
 }
 

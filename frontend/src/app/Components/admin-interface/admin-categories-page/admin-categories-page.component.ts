@@ -28,6 +28,7 @@ export class AdminCategoriesPageComponent implements OnInit {
   removeCategoryAndTag(categoryId: string) {
     this.adminService.removeCategoryAndTag(categoryId);
     alert('Product Removed Successfully');
+    window.location.reload()
   }
 
   searchCategoryAndTag(term: string) {

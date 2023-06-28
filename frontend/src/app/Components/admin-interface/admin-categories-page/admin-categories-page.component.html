@@ -17,7 +17,7 @@
 
         <div class="add-new-product-heading">
           <div>Add New Category</div>
-          <a routerLink="/category-details"
+          <a routerLink="/category-management"
             ><button class="add-new-product-btn">Add</button></a
           >
         </div>
@@ -43,7 +43,7 @@
               <div class="name">{{ category.tag }}</div>
             </div>
             <div class="small-container">
-              <a routerLink="/category-details/{{ category._id }}">
+              <a routerLink="/category-management/{{ category._id }}">
                 <button class="edit-btn">Edit</button>
               </a>
             </div>
