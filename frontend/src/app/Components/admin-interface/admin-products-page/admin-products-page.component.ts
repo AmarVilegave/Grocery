@@ -39,6 +39,7 @@ export class AdminProductsPageComponent implements OnInit {
   removeProduct(productId: string) {
     this.adminService.removeProduct(productId);
     alert('Product Removed Successfully');
+    window.location.reload();
   }
 
   ngOnInit(): void {}
