@@ -14,6 +14,7 @@ import { AdminLoginComponent } from './Components/admin-interface/admin-login/ad
 import { UserLoginComponent } from './Components/userInterface/user-login/user-login.component';
 import { AdminCategoriesPageComponent } from './Components/admin-interface/admin-categories-page/admin-categories-page.component';
 import { AdminProductsPageComponent } from './Components/admin-interface/admin-products-page/admin-products-page.component';
+import { AdminPageComponent } from './Components/admin-interface/admin-page/admin-page.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'card/:tag/:category', component: CardComponent },
   {path:'admin-login', component:AdminLoginComponent},
   {path:'user-login', component:UserLoginComponent},
+  {path:'admin',component:AdminPageComponent},
   {path:'admin-categories', component:AdminCategoriesPageComponent},
   {path:'admin-products', component:AdminProductsPageComponent},
 

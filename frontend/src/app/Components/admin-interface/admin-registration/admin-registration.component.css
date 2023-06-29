@@ -95,7 +95,7 @@ select, input {
 }
 
 .submit-btn:disabled {
-  background-color: #ff4b2b;
+  background-color: grey;
 }
 
 .errorBorder {

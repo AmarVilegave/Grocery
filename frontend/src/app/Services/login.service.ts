@@ -8,7 +8,6 @@ import {
   ADMIN_URL,
   ADMIN_LOGIN_URL,
 } from '../shared/constants/urls';
-import { HttpHeaders } from '@angular/common/http';
 import { databaseAddress } from '../shared/interfaces/databaseAddress';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { SessionUserModel } from '../shared/classes/SessionUserModel';
@@ -20,7 +19,7 @@ import { databaseAdmin } from '../shared/interfaces/databaseAdmin';
 @Injectable({
   providedIn: 'root',
 })
-export class UserService {
+export class LoginService {
   user: SessionUserModel = this.getUserFromLocalStorage();
   userSubject: BehaviorSubject<SessionUserModel> = new BehaviorSubject(
     this.user

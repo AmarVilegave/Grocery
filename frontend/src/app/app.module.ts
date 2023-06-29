@@ -20,6 +20,7 @@ import { UserLoginComponent } from './Components/userInterface/user-login/user-l
 import { AdminLoginComponent } from './Components/admin-interface/admin-login/admin-login.component';
 import { AdminCategoriesPageComponent } from './Components/admin-interface/admin-categories-page/admin-categories-page.component';
 import { AdminProductsPageComponent } from './Components/admin-interface/admin-products-page/admin-products-page.component';
+import { AdminPageComponent } from './Components/admin-interface/admin-page/admin-page.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { AdminProductsPageComponent } from './Components/admin-interface/admin-p
     UserLoginComponent,
     AdminLoginComponent,
     AdminCategoriesPageComponent,
-    AdminProductsPageComponent
+    AdminProductsPageComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,

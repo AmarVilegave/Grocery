@@ -1,0 +1,42 @@
+<div *ngIf="!admin.email" class="error-message-container">
+  <div class="message-container">
+    <div class="error-message">
+      <span>Error Message :</span> You are not authorized to access this page
+    </div>
+  </div>
+</div>
+
+<div *ngIf="admin.email" class="admin-container">
+  <div class="container">
+    <div class="title-container">
+      <div></div>
+      <div class="title">Admin Page</div>
+      <div class="add-admin-btn">
+        <a routerLink="/admin-registration">
+          <button class="admin-btn">Add New Admin</button>
+        </a>
+      </div>
+    </div>
+    <div class="border">
+      <div class="headings">
+        <div class="sub-heading">Product</div>
+        <div class="small-container">
+          <a routerLink="/admin-products"
+            ><button class="view-btn">View</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="border">
+      <div class="headings">
+        <div class="sub-heading">Categories</div>
+        <div class="small-container">
+          <a routerLink="/admin-categories"
+            ><button class="view-btn">View</button></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
