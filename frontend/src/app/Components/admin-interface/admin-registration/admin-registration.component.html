@@ -1,6 +1,6 @@
 <div class="admin-registration-container">
   <div class="container">
-    <form [formGroup]="adminRegistrationForm" >
+    <form [formGroup]="adminRegistrationForm" (ngSubmit)="registerAdmin()" >
       <div class="form-container">
         <div class="details-container">
           <div class="heading">Full Name :</div>

@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const categories = require("./routes/categoryRoute");
 const products = require("./routes/productRoute");
+const admin = require("./routes/adminRoute");
 const cors = require("cors");
 
 if (!config.get("jwtPrivateKey")) {
@@ -21,6 +22,8 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/categories", categories);
 app.use("/api/products", products);
+app.use("/api/admin", admin);
+
 
 
 
