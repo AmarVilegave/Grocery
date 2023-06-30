@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { LoginService } from 'src/app/Services/login.service';
+import { SessionUserModel } from 'src/app/shared/classes/SessionUserModel';
 
 
 @Component({
@@ -8,9 +11,12 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./user-login.component.css']
 })
 export class UserLoginComponent implements OnInit {
+  user!:SessionUserModel;
 
-  constructor(    private fb: FormBuilder,
-    ) { }
+  constructor(    private fb: FormBuilder, private loginService:LoginService, private router:Router) {
+      this.loginService.getUserObservable().subscribe((sessionUser) => {
+        this.user = sessionUser;})
+    }
 
     loginDetailsForm = this.fb.group({
       email: [
@@ -26,6 +32,23 @@ export class UserLoginComponent implements OnInit {
     });
 
   ngOnInit(): void {
+  }
+
+  loginUser() {
+    const userData = {
+      email: this.loginDetailsForm.get('email').value,
+      password: this.loginDetailsForm.get('password').value,
+    };
+    this.loginService.loginUser(userData);
+    setTimeout(() => {
+      this.loginService.tokenFromSessionStorage().subscribe((data: any) => {
+        if (!data.error) {
+          this.router.navigate(['/', 'home']).then(() => {
+            window.location.reload();
+          });
+        }
+      });
+    }, 1000);
   }
 
 }

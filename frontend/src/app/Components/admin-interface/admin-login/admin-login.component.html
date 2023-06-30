@@ -1,6 +1,14 @@
-<div class="login-page-container">
+<div *ngIf="user.email" class="error-message-container">
+  <div class="message-container">
+    <div class="error-message">
+      <span>Error Message :</span> You are not authorized to access this page
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!user.email" class="login-page-container">
   <div class="container">
-    <form [formGroup]="adminLoginDetailsForm">
+    <form [formGroup]="adminLoginDetailsForm" (ngSubmit)="loginAdmin()">
       <div class="form-container">
         <div class="user-details-container">
           <div class="heading">Email :</div>
@@ -59,10 +67,7 @@
           <button>Login</button>
         </div>
 
-        <div class="registration-page">
-          <a routerLink="/registration">Create New Account</a>
-        </div>
-      </div>
+         </div>
     </form>
   </div>
 </div>

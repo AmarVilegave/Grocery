@@ -5,7 +5,8 @@ const app = express();
 const categories = require("./routes/categoryRoute");
 const products = require("./routes/productRoute");
 const admin = require("./routes/adminRoute");
-const usersRoute = require("./routes/usersRoute");
+const usersRoute = require("./routes/userRoute");
+const loginRoute = require('./routes/loginRoute')
 const cors = require("cors");
 
 if (!config.get("jwtPrivateKey")) {
@@ -25,6 +26,8 @@ app.use("/api/categories", categories);
 app.use("/api/products", products);
 app.use("/api/admin", admin);
 app.use("/api/users", usersRoute);
+app.use("/api/login", loginRoute);
+
 
 
 

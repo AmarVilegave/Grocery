@@ -1,6 +1,6 @@
 <div class="login-page-container">
   <div class="container">
-    <form [formGroup]="loginDetailsForm">
+    <form [formGroup]="loginDetailsForm" (ngSubmit)="loginUser()">
       <div class="form-container">
         <div class="user-details-container">
           <div class="heading">Email :</div>
