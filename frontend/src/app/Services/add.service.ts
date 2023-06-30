@@ -134,5 +134,17 @@ export class AddService {
     this.setProductToLocalStorage();
   }
 
+  productExist(id: string) {
+    let product = this.cart.items.find((ele) => ele._id === id);
+    if (product) return true;
+    else return false;
+  }
+
+  productQuantity(id: string) {
+    let product = this.cart.items.find((ele) => ele._id === id);
+    if (product) return product.quantity;
+    else return '';
+  }
+
 
 }

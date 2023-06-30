@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { ProductService } from 'src/app/Services/product.service';
 import { Product } from 'src/app/shared/classes/Product';
-
+import { AddService } from 'src/app/Services/add.service';
+import { Cart } from 'src/app/shared/classes/Cart';
+import { SessionUserModel } from 'src/app/shared/classes/SessionUserModel';
+import { LoginService } from 'src/app/Services/login.service';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -14,11 +17,17 @@ export class CardComponent implements OnInit {
   mainProducts: Product[] = [];
   categories = new Set();
   selectedCategory: string = '';
+  cart!: Cart;
+  user!: SessionUserModel;
 
 
 
-  constructor(    private productService: ProductService,
-    private activatedRoute: ActivatedRoute
+
+
+  constructor(private productService: ProductService,
+    private activatedRoute: ActivatedRoute,
+    private addService:AddService,
+    private loginService:LoginService
 
     ) {
       let productsObservable: Observable<Product[]>;
@@ -40,8 +49,10 @@ export class CardComponent implements OnInit {
           }
         }
       });
+    });
 
-
+    this.loginService.getUserObservable().subscribe((sessionUser) => {
+      this.user = sessionUser;
     });
     }
 
@@ -69,6 +80,26 @@ export class CardComponent implements OnInit {
       return true;
     }
     return false;
+  }
+
+  productExist(id: string) {
+    return this.addService.productExist(id);
+  }
+
+  onClick(product: Product) {
+    this.addService.onAdd(product);
+  }
+
+   onMinus(id: string, quantity: number) {
+    this.addService.onMinus(id);
+  }
+
+   onPlus(id: string) {
+    this.addService.onPlus(id);
+  }
+
+   prodQuantity(id: string) {
+    return this.addService.productQuantity(id);
   }
 
 }

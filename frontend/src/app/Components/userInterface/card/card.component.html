@@ -51,17 +51,21 @@
 
             <div class="add">
               <button
+              *ngIf="!productExist(product._id)"
+                (click)="onClick(product)"
                 class="add-btn"
               >
                 Add
               </button>
-              <div class="btns" >
+              <div class="btns" *ngIf="productExist(product._id)">
                 <div
+                (click)="onMinus(product._id, product.quantity)"
                   class="fa-solid fa-minus minus"
                 ></div>
 
-                1
+                {{ prodQuantity(product._id) }}
                 <div
+                (click)="onPlus(product._id)"
                   class="fa-solid fa-plus plus"
                   disabled="checkPlusQuantity(product.id)"
                 ></div>
