@@ -1,0 +1,82 @@
+<div class="error-message-container" *ngIf="!cart.items.length">
+  <div class="error-container">
+    <div class="error-message-content">
+      <div class="message">Hey, it feels so light!</div>
+      <p>There is nothing in your bag, Let's add some items</p>
+      <button routerLink="/home" class="explore-btn">Go Explore</button>
+    </div>
+  </div>
+</div>
+
+<div class="cart-container">
+  <div *ngIf="cart && cart.items.length" class="container">
+    <ul>
+      <li *ngFor="let item of cart.items">
+        <div>
+          <div class="image">
+            <img [src]="item.image" [alt]="item.name" />
+          </div>
+        </div>
+        <div class="details">
+          <div class="category-name">
+            <a href="#">{{ item.category.category }}</a>
+          </div>
+          <div class="product-name">
+            <a routerLink="/">{{ item.name }}</a>
+          </div>
+          <div class="weight-quantity">
+            <span class="weight">{{ item.weight }}</span>
+            <span class="price">{{
+              item.price * item.quantity | currency : "INR"
+            }}</span>
+          </div>
+
+          <div class="btns">
+            <div (click)="onMinus(item._id)" class="fa-solid fa-minus"></div>
+            {{ prodQuantity(item._id) }}
+            <div
+              (click)="onPlus(item._id)"
+              class="fa-solid fa-plus"
+              disabled="checkPlusQuantity(product.id)"
+            ></div>
+          </div>
+        </div>
+        <div
+          (click)="onRemove(item._id, item.quantity)"
+          class="fa-solid fa-xmark close"
+        ></div>
+      </li>
+    </ul>
+
+    <div class="checkout">
+      <div>
+        <div class="totalPrice">
+          Total Price : {{ cart.totalPrice | currency : "INR" }}
+        </div>
+        <div class="totalQuantity">
+          Total Quantity : {{ cart.totalQuantity }}
+        </div>
+      </div>
+      <div class="termsAndConditions">
+        <div>
+          <input
+            type="checkbox"
+            name="checkbox"
+            [(ngModel)]="isChecked"
+          />
+          <label>Accept Terms & Conditions</label>
+        </div>
+        <div class="instructions">Accept Terms & Conditions To Proceed</div>
+      </div>
+      <div class="placeOrder">
+        <button
+          [disabled]="admin.role || !this.isChecked"
+          (click)="placeOrder()"
+          class="placeOrderBtn"
+        >
+          Place Order
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
