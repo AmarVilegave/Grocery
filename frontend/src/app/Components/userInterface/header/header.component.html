@@ -7,13 +7,13 @@
     <nav>
       <ul>
         <li></li>
-        <li  class="profile-container">
-          <a>user name</a>
+        <li *ngIf="user.fullName"  class="profile-container">
+          <a>{{ user.fullName }}</a>
           <div class="details">
             <a routerLink="/orders-page">Orders</a>
           </div>
         </li>
-        <li >
+        <li *ngIf="user.fullName">
           <a routerLink="/favorite-page">Wishlist</a>
         </li>
         <li>
@@ -22,11 +22,11 @@
             ><span>0</span></a
           >
         </li>
-        <li >
+        <li *ngIf="!isTokenValid">
           <a routerLink="/login" class="title">Login</a>
         </li>
-        <li >
-          <a routerLink="/"  class="title"
+        <li *ngIf="isTokenValid">
+          <a routerLink="/" (click)="removeUserDataAndToken()" class="title"
             >Logout</a
           >
         </li>
