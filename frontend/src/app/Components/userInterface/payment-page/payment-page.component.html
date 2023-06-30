@@ -1,0 +1,78 @@
+<div
+  *ngIf="!isPaymentSuccessful && cart.items.length >= 1"
+  class="payment-container"
+>
+  <div class="container">
+    <div class="payment-options">
+      <div class="content-container">
+        <div class="heading">Select Payment Option :</div>
+        <div class="radio-btns">
+          <div *ngFor="let details of paymentDetails" class="option-container">
+            <input
+              name="paymentOptions"
+              (change)="onChangePaymentMode($event)"
+              value="{{ details.paymentMode }}"
+              type="radio"
+            />
+            <img src="{{ details.img }}" alt="" />
+            <div class="option">{{ details.paymentMode }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-heading">Details</div>
+        <div class="details-content">
+          <div class="sub-heading">Total MRP :</div>
+          <div class="total-price">
+            {{ cart.totalPrice | currency : "INR" }}
+          </div>
+        </div>
+        <div class="details-content">
+          <div class="sub-heading">Convenience Fee :</div>
+          <div class="convenience-fee">
+            {{ convenienceFee | currency : "INR" }}
+          </div>
+        </div>
+        <hr />
+        <div class="total-amount">
+          Total Amount :
+          <span>{{ cart.totalPrice + convenienceFee | currency : "INR" }}</span>
+        </div>
+      </div>
+      <div class="place-order-btn-container">
+        <button (click)="onConfirmOrder()" class="place-order-btn">
+          Place Order
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="isPaymentSuccessful" class="payment-container">
+  <div class="container">
+    <div class="message-content-container">
+      <div class="icon-container">
+        <i class="fa-regular fa-circle-check fa-3x"></i>
+      </div>
+      <div class="user-container">
+        <div class="user-name">
+          Hello <span>{{ user.fullName }}</span>
+        </div>
+      </div>
+      <div class="message">
+        Thank you for ordering. We received you order and will deliver it
+        shortly !
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="cart.items.length === 0" class="payment-container">
+  <div class="container">
+    <div class="message-content-container">
+      <div class="empty-cart-message">
+        No items found in your cart please add products
+      </div>
+    </div>
+  </div>
+</div>

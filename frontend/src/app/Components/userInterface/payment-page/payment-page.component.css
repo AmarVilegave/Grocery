@@ -1,0 +1,186 @@
+.payment-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 720px;
+}
+
+.container {
+  border: 2px solid #ff4b2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.payment-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff4b2b;
+}
+
+.radio-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+img {
+  height: 37px;
+  width: 60px;
+}
+
+input[type="radio"] {
+  accent-color: #ff0000;
+  transform: scale(1.2);
+}
+
+.option {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.details {
+  width: 50%;
+}
+
+.details-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #a7a6ba;
+}
+
+.details-content {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+
+.sub-heading {
+  color: #a7a6ba;
+}
+
+.total-amount,
+.total-price,
+.convenience-fee {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.place-order-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.place-order-btn {
+  padding: 8px 30px;
+  outline: none;
+  border: none;
+  background-color: #ff3f6c;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.8;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.place-order-btn:hover {
+  opacity: 1;
+}
+
+.place-order-btn:active {
+  transform: scale(0.95);
+}
+
+.icon-container {
+  margin-bottom: 20px;
+}
+
+.--fa-border-style {
+  color: #ff3f6c;
+}
+
+.fa-circle-check {
+  color: #ff3f6c;
+}
+
+.message-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user-name span {
+  color: blueviolet;
+}
+
+.message {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.home-btn-container {
+  margin-top: 20px;
+}
+
+.home-btn {
+  padding: 8px 30px;
+  outline: none;
+  border: none;
+  background-color: #ff3f6c;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.8;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.home-btn:hover {
+  opacity: 1;
+}
+
+.home-btn:active {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
+
+.empty-cart-message {
+  font-size: 24px;
+}

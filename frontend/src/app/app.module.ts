@@ -24,6 +24,7 @@ import { AdminPageComponent } from './Components/admin-interface/admin-page/admi
 import { WishlistPageComponent } from './Components/userInterface/wishlist-page/wishlist-page.component';
 import { ProductPageComponent } from './Components/userInterface/product-page/product-page.component';
 import { CartPageComponent } from './Components/userInterface/cart-page/cart-page.component';
+import { PaymentPageComponent } from './Components/userInterface/payment-page/payment-page.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { CartPageComponent } from './Components/userInterface/cart-page/cart-pag
     AdminPageComponent,
     WishlistPageComponent,
     ProductPageComponent,
-    CartPageComponent
+    CartPageComponent,
+    PaymentPageComponent
   ],
   imports: [
     BrowserModule,
