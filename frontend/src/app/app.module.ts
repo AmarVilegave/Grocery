@@ -22,6 +22,7 @@ import { AdminCategoriesPageComponent } from './Components/admin-interface/admin
 import { AdminProductsPageComponent } from './Components/admin-interface/admin-products-page/admin-products-page.component';
 import { AdminPageComponent } from './Components/admin-interface/admin-page/admin-page.component';
 import { WishlistPageComponent } from './Components/userInterface/wishlist-page/wishlist-page.component';
+import { ProductPageComponent } from './Components/userInterface/product-page/product-page.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { WishlistPageComponent } from './Components/userInterface/wishlist-page/
     AdminCategoriesPageComponent,
     AdminProductsPageComponent,
     AdminPageComponent,
-    WishlistPageComponent
+    WishlistPageComponent,
+    ProductPageComponent
   ],
   imports: [
     BrowserModule,

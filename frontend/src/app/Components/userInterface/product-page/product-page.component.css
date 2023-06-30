@@ -1,0 +1,126 @@
+.product-page-container {
+  display: flex;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 1280px;
+}
+
+.left-container {
+  width: 50%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 480px;
+  height: 480px;
+}
+
+.title {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sub-heading {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 60px 0 0 200px;
+}
+
+.links {
+  margin-top: 15px;
+}
+
+.links a {
+  cursor: pointer;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.links a:hover {
+  color: #ff4b2b;
+}
+
+.links span {
+  font-size: 18px;
+  color: #aeaeac;
+}
+
+.product-name {
+  font-size: 34px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.weight-price-container {
+  margin-top: 15px;
+}
+
+.two {
+  padding: 10px 15px;
+  width: max-content;
+  background-color: rgb(12, 131, 31);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border: 0.5px solid rgba(12, 131, 31, 0.3);
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.add-btn-container {
+  display: flex;
+  margin-top: 15px;
+}
+
+.add-btn {
+  width: 132px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: whitesmoke;
+  padding: 12px 50px;
+  color: rgb(12, 131, 31);
+  font-size: 16px;
+  border-radius: 5px;
+  border: 0.5px solid rgb(12, 131, 31);
+}
+
+.add-btn:hover {
+  color: white;
+  background-color: rgb(12, 131, 31);
+}
+
+.btns {
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 132px;
+  padding: 12px 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: rgb(12, 131, 31);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}

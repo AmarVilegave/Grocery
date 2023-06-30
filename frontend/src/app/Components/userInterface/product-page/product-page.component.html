@@ -1,0 +1,64 @@
+<div>
+  <div class="product-page-container">
+    <div class="left-container">
+      <div *ngFor="let image of item?.image" class="image-container">
+        <img *ngIf="image" [src]="image" [alt]="item.name" />
+      </div>
+      <div class="details-container">
+        <div class="title">Product Details</div>
+        <div class="description">
+          <div class="sub-heading">Description</div>
+          <p>
+            {{ item.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="links">
+        <a href="#">Home</a> /
+        <a
+          href="/card/{{ item.category.tag }}/{{ item.category.category }}"
+          (click)="
+            selectActiveCategoryAndTag(
+              item.category.category,
+              item.category.tag
+            )
+          "
+          >{{ item.category.category }}</a
+        >
+        /
+        <span>{{ item.name }}</span>
+      </div>
+      <div class="product-name">{{ item.name }}</div>
+      <div class="weight-price-container">
+        <div class="weight-price">
+          <div class="weight">Weight : {{ item.weight }}</div>
+          <div class="Price">Price : {{ item.price | currency : "INR" }}</div>
+        </div>
+      </div>
+      <div class="add-btn-container">
+        <button
+          class="add-btn"
+          (click)="onClick(item)"
+          *ngIf="!productExist(item._id)"
+        >
+          Add
+        </button>
+        <div class="btns" *ngIf="productExist(item._id)">
+          <div
+            (click)="onMinus(item._id, item.quantity)"
+            class="fa-solid fa-minus"
+          ></div>
+
+          {{ productQuantity(item._id) }}
+          <div
+            (click)="onPlus(item._id)"
+            class="fa-solid fa-plus"
+            disabled="checkPlusQuantity(product.id)"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

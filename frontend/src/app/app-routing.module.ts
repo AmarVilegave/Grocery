@@ -16,6 +16,7 @@ import { AdminCategoriesPageComponent } from './Components/admin-interface/admin
 import { AdminProductsPageComponent } from './Components/admin-interface/admin-products-page/admin-products-page.component';
 import { AdminPageComponent } from './Components/admin-interface/admin-page/admin-page.component';
 import { WishlistPageComponent } from './Components/userInterface/wishlist-page/wishlist-page.component';
+import { ProductPageComponent } from './Components/userInterface/product-page/product-page.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -38,7 +39,8 @@ const routes: Routes = [
   {path:'admin',component:AdminPageComponent},
   {path:'admin-categories', component:AdminCategoriesPageComponent},
   {path:'admin-products', component:AdminProductsPageComponent},
-  {path:'wishlist', component:WishlistPageComponent}
+  {path:'wishlist', component:WishlistPageComponent},
+  {path:'product-page/:id', component:ProductPageComponent}
 
 ];
 
