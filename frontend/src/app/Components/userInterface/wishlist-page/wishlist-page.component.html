@@ -1,0 +1,63 @@
+<app-tags></app-tags>
+<div *ngIf="!wishlist.length" class="empty-wishlist-container">
+  <div class="message-container">
+    <div class="message">
+      <div class="message-title">Your Wishlist is empty !</div>
+      <div class="message-content">
+        seems like you dont't have wishes here. <span>Make a wish !</span>
+      </div>
+      <div class="start-shopping-btn">
+        <button routerLink="/home" class="shopping-btn">Start Shopping</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="wishlist.length" class="container">
+  <div *ngFor="let product of wishlist" class="card" id="{{ product._id }}">
+    <a routerLink="/product-page/{{ product._id }}">
+      <img [src]="product.image" [alt]="product.name" />
+    </a>
+    <div class="details">
+      <div class="product-name">
+        <div class="name">
+          {{ product.name }}
+        </div>
+        <span class="favorite {{ !toggleFavorite(product._id) ? '' : 'red' }}"
+          ><i
+            (click)="onAddAndRemoveFavorite(product)"
+            class="fa-solid fa-heart"
+          ></i
+        ></span>
+      </div>
+
+      <div class="weight-price-container">
+        <div class="weight">
+          {{ product.weight }}
+        </div>
+        <div class="price">
+          {{ product.price | currency : "INR" }}
+        </div>
+      </div>
+
+      <div class="add">
+        <button
+          *ngIf="!productExist(product._id)"
+          class="add-btn"
+          (click)="onClick(product)"
+        >
+          Add
+        </button>
+        <div *ngIf="productExist(product._id)" class="btns">
+          <div (click)="onMinus(product._id)" class="fa-solid fa-minus"></div>
+          {{ productQuantity(product._id) }}
+          <div
+            (click)="onPlus(product._id)"
+            class="fa-solid fa-plus"
+            disabled="checkPlusQuantity(product.id)"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

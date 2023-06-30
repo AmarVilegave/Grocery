@@ -21,6 +21,7 @@ import { AdminLoginComponent } from './Components/admin-interface/admin-login/ad
 import { AdminCategoriesPageComponent } from './Components/admin-interface/admin-categories-page/admin-categories-page.component';
 import { AdminProductsPageComponent } from './Components/admin-interface/admin-products-page/admin-products-page.component';
 import { AdminPageComponent } from './Components/admin-interface/admin-page/admin-page.component';
+import { WishlistPageComponent } from './Components/userInterface/wishlist-page/wishlist-page.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { AdminPageComponent } from './Components/admin-interface/admin-page/admi
     AdminLoginComponent,
     AdminCategoriesPageComponent,
     AdminProductsPageComponent,
-    AdminPageComponent
+    AdminPageComponent,
+    WishlistPageComponent
   ],
   imports: [
     BrowserModule,
