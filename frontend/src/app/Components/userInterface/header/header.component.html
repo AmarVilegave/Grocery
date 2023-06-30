@@ -19,7 +19,7 @@
         <li>
           <a routerLink="/cart"
             >Cart <i class="fa-solid fa-cart-shopping"></i
-            ><span>0</span></a
+            ><span>{{ cart.totalQuantity }}</span></a
           >
         </li>
         <li *ngIf="!isTokenValid">

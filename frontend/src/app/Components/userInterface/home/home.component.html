@@ -31,6 +31,8 @@
     <div
       *ngFor="let tag of tags"
       class="image-container"
+      (click)="selectActiveTag(tag.tagName)"
+      routerLink="/card/{{ tag.tagName }}"
     >
       <img [src]="tag.tagImage" [alt]="tag.tagName" />
       <div class="tag-name">{{ tag.tagName }}</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/Services/product.service';
+import { Category } from 'src/app/shared/classes/Category';
 
 @Component({
   selector: 'app-home',
@@ -34,9 +36,27 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  categories: Category[] = [];
+  tagObject = new Set();
+  selectedTag: string;
+  selectedCategory: string;
+
+  constructor(private productService:ProductService) { }
 
   ngOnInit(): void {
+  }
+
+  setNewTag(tag: string) {
+    this.productService.setNewTag(tag);
+  }
+
+  selectActiveTag(tag: string) {
+    console.log('home tag', tag);
+    this.selectedTag = tag;
+    if (this.selectedTag) {
+      this.setNewTag(this.selectedTag);
+      return true;
+    } else return false;
   }
 
 }
