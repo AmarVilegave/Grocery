@@ -7,6 +7,8 @@ const products = require("./routes/productRoute");
 const admin = require("./routes/adminRoute");
 const usersRoute = require("./routes/userRoute");
 const loginRoute = require('./routes/loginRoute')
+const order = require("./routes/orderRoute");
+
 const cors = require("cors");
 
 if (!config.get("jwtPrivateKey")) {
@@ -27,6 +29,8 @@ app.use("/api/products", products);
 app.use("/api/admin", admin);
 app.use("/api/users", usersRoute);
 app.use("/api/login", loginRoute);
+app.use("/api/orders", order);
+
 
 
 
