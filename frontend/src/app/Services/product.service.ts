@@ -23,6 +23,8 @@ export class ProductService {
   categorySubject = new BehaviorSubject(this.selectedCategory);
   products: Product = this.getProductFromLocalStorage();
   productSubject: BehaviorSubject<Product> = new BehaviorSubject(this.products);
+  private subject = new Subject<any>();
+
 
   constructor(private http: HttpClient) { }
 
@@ -79,6 +81,10 @@ export class ProductService {
     this.selectedCategory = category;
     this.categorySubject.next(category);
     console.log('service selected category', this.selectedCategory);
+  }
+
+  onAddToggle() {
+    return this.subject.asObservable();
   }
 
 }

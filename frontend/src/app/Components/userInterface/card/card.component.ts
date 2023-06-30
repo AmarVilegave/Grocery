@@ -7,6 +7,7 @@ import { AddService } from 'src/app/Services/add.service';
 import { Cart } from 'src/app/shared/classes/Cart';
 import { SessionUserModel } from 'src/app/shared/classes/SessionUserModel';
 import { LoginService } from 'src/app/Services/login.service';
+import { WishlistService } from 'src/app/Services/wishlist.service';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -19,6 +20,14 @@ export class CardComponent implements OnInit {
   selectedCategory: string = '';
   cart!: Cart;
   user!: SessionUserModel;
+  wishlist!: Product[];
+  favorite: boolean;
+  wishlisted: Subscription;
+  subscription: Subscription;
+  showFiller: boolean = false;
+  show: boolean = false;
+
+
 
 
 
@@ -27,7 +36,8 @@ export class CardComponent implements OnInit {
   constructor(private productService: ProductService,
     private activatedRoute: ActivatedRoute,
     private addService:AddService,
-    private loginService:LoginService
+    private loginService:LoginService,
+    private wishlistService:WishlistService
 
     ) {
       let productsObservable: Observable<Product[]>;
@@ -54,6 +64,14 @@ export class CardComponent implements OnInit {
     this.loginService.getUserObservable().subscribe((sessionUser) => {
       this.user = sessionUser;
     });
+
+    this.subscription = this.productService
+      .onAddToggle()
+      .subscribe((value) => (this.show = value));
+
+      this.addService
+      .getObservable()
+      .subscribe((product) => (this.cart = product));
     }
 
   ngOnInit(): void {
@@ -100,6 +118,21 @@ export class CardComponent implements OnInit {
 
    prodQuantity(id: string) {
     return this.addService.productQuantity(id);
+  }
+
+  onAddAndRemoveFavorite(product: Product) {
+    let sessionUser = this.user;
+    console.log(sessionUser);
+    if (!sessionUser.email) {
+      console.log(sessionUser.email);
+      alert('To add product in your wishlist please login');
+    } else {
+      this.wishlistService.onAddAndRemoveFavorite(product);
+    }
+  }
+
+  toggleFavorite(id: string) {
+    return this.wishlistService.toggleFavorite(id);
   }
 
 }

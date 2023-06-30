@@ -1,4 +1,4 @@
-const { categorySchema } = require("./category");
+const { categorySchema } = require("./categoryModel");
 const Joi = require("joi");
 const mongoose = require("mongoose");
 

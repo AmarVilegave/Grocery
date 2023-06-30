@@ -23,7 +23,7 @@
           >
         </li>
         <li *ngIf="!isTokenValid">
-          <a routerLink="/login" class="title">Login</a>
+          <a routerLink="/user-login" class="title">Login</a>
         </li>
         <li *ngIf="isTokenValid">
           <a routerLink="/" (click)="removeUserDataAndToken()" class="title"
