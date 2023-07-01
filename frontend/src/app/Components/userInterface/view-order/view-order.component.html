@@ -1,0 +1,31 @@
+<div class="products-container">
+  <mat-dialog-content class="container">
+    <div
+      *ngFor="let product of order?.cart?.items"
+      class="product-details-container"
+    >
+      <div class="product-image">
+        <img [src]="product.image" alt="" />
+      </div>
+      <div class="product-info">
+        <div class="category-name">
+          <a href="#">{{ product.category.category }}</a>
+        </div>
+        <div class="product-name">
+          <a href="#">{{ product.name }}</a>
+        </div>
+        <div class="product-weight-price">
+          <span class="product-weight">{{ product.weight }}</span>
+          <span class="product-price">
+            {{ product.price | currency : "INR" }}
+          </span>
+        </div>
+        <div class="purchased-quantity">
+          <span> Purchased Quantity: {{ product.quantity }}</span>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+</div>
+
+

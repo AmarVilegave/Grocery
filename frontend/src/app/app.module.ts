@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
@@ -26,6 +25,10 @@ import { ProductPageComponent } from './Components/userInterface/product-page/pr
 import { CartPageComponent } from './Components/userInterface/cart-page/cart-page.component';
 import { PaymentPageComponent } from './Components/userInterface/payment-page/payment-page.component';
 import { OrdersPagesComponent } from './Components/userInterface/orders-pages/orders-pages.component';
+import { ViewOrderComponent } from './Components/userInterface/view-order/view-order.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -52,14 +55,19 @@ import { OrdersPagesComponent } from './Components/userInterface/orders-pages/or
     ProductPageComponent,
     CartPageComponent,
     PaymentPageComponent,
-    OrdersPagesComponent
+    OrdersPagesComponent,
+    ViewOrderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatDialogModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

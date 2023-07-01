@@ -20,6 +20,7 @@ import { ProductPageComponent } from './Components/userInterface/product-page/pr
 import { CartPageComponent } from './Components/userInterface/cart-page/cart-page.component';
 import { PaymentPageComponent } from './Components/userInterface/payment-page/payment-page.component';
 import { OrdersPagesComponent } from './Components/userInterface/orders-pages/orders-pages.component';
+import { ViewOrderComponent } from './Components/userInterface/view-order/view-order.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -46,7 +47,9 @@ const routes: Routes = [
   {path:'product-page/:id', component:ProductPageComponent},
   {path:'cart', component:CartPageComponent},
   {path:'payment-page', component:PaymentPageComponent},
-  {path:'orders-page', component:OrdersPagesComponent}
+  {path:'orders-page', component:OrdersPagesComponent},
+  {path:'view-order', component:ViewOrderComponent},
+  {path:'view-order/:id', component:ViewOrderComponent}
 
 ];
 
