@@ -1,0 +1,48 @@
+<div *ngIf="!orders.length" class="empty-orders-container">
+  <div class="message-container">
+    <div class="message">
+      <div class="message-title">No orders placed !</div>
+      <div class="message-content">
+        seems like you dont't have wishes here. <span>Make a wish !</span>
+      </div>
+      <div class="start-shopping-btn">
+        <button routerLink="/home" class="shopping-btn">Start Shopping</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="orders.length" class="user-orders-container">
+  <div class="container">
+    <div *ngFor="let order of orders" class="orders-container">
+      <div class="order-details-container">
+        <div class="user-details-container">
+          <div class="user-name">{{ order.user.fullName }}</div>
+          <div class="user-email">{{ order.user.email }}</div>
+          <div class="user-contact-no">{{ order.user.mobileNo }}</div>
+          <div class="user-address-container">
+            <div class="address">{{ order.user.addresses.address }}</div>
+            <div class="landmark">{{ order.user.addresses.landmark }}</div>
+            <div class="city">{{ order.user.addresses.city }}</div>
+            <div class="state">{{ order.user.addresses.state }}</div>
+            <div class="pincode">{{ order.user.addresses.pincode }}</div>
+          </div>
+        </div>
+        <div class="quantity-price">
+          <div class="quantity">
+            Total Quantity: {{ order.cart.totalQuantity }} Items
+          </div>
+          <div class="total-price">
+            Total Price:
+            {{ order.cart.totalPrice + convenienceFee | currency : "INR" }}
+          </div>
+        </div>
+      </div>
+      <div class="view-btn-container">
+        <button  class="view-btn">
+          View Order
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

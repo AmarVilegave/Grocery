@@ -19,6 +19,7 @@ import { WishlistPageComponent } from './Components/userInterface/wishlist-page/
 import { ProductPageComponent } from './Components/userInterface/product-page/product-page.component';
 import { CartPageComponent } from './Components/userInterface/cart-page/cart-page.component';
 import { PaymentPageComponent } from './Components/userInterface/payment-page/payment-page.component';
+import { OrdersPagesComponent } from './Components/userInterface/orders-pages/orders-pages.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -44,7 +45,8 @@ const routes: Routes = [
   {path:'wishlist', component:WishlistPageComponent},
   {path:'product-page/:id', component:ProductPageComponent},
   {path:'cart', component:CartPageComponent},
-  {path:'payment-page', component:PaymentPageComponent}
+  {path:'payment-page', component:PaymentPageComponent},
+  {path:'orders-page', component:OrdersPagesComponent}
 
 ];
 
