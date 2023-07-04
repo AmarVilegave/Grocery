@@ -9,7 +9,9 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AdminService } from 'src/app/Services/admin.service';
 import { ProductService } from 'src/app/Services/product.service';
+import { LoginService } from 'src/app/Services/login.service';
 import { Category } from 'src/app/shared/classes/Category';
+import { databaseAdmin } from 'src/app/shared/interfaces/databaseAdmin';
 
 @Component({
   selector: 'app-category-management',
@@ -22,9 +24,11 @@ export class CategoryManagementComponent implements OnInit {
   tagObject = new Set();
   isAddCategory: boolean = true;
   searchTerm: '';
+  admin!:databaseAdmin;
 
   constructor(private fb:FormBuilder,    private productService: ProductService,
-    private adminService: AdminService, private activatedRoute:ActivatedRoute
+    private adminService: AdminService, private activatedRoute:ActivatedRoute,
+    private loginService:LoginService
     ) {
       let categoriesObservable: Observable<Category[]>;
     categoriesObservable = this.productService.getAllCategories();
@@ -41,6 +45,10 @@ export class CategoryManagementComponent implements OnInit {
           this.defaultFormValues();
         });
       }
+    });
+
+    this.loginService.getAdminObservable().subscribe((sessionAdmin) => {
+      this.admin = sessionAdmin;
     });
      }
 

@@ -1,3 +1,27 @@
+.error-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 720px;
+}
+
+.message-container {
+  border: 2px solid #ff4b2b;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.error-message {
+  font-size: 30px;
+}
+
+.error-message span {
+  color: red;
+}
 .login-page-container {
   display: flex;
   justify-content: center;

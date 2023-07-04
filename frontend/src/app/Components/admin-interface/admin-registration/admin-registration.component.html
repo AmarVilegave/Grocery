@@ -1,3 +1,11 @@
+<div *ngIf="!admin.email" class="error-message-container">
+  <div class="message-container">
+    <div class="error-message">
+      <span>Error Message :</span> You are not authorized to access this page
+    </div>
+  </div>
+</div>
+
 <div class="admin-registration-container">
   <div class="container">
     <form [formGroup]="adminRegistrationForm" (ngSubmit)="registerAdmin()" >

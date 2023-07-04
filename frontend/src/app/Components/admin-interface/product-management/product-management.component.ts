@@ -9,8 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable} from 'rxjs';
 import { AdminService } from 'src/app/Services/admin.service';
 import { ProductService } from 'src/app/Services/product.service';
+import { LoginService } from 'src/app/Services/login.service';
 import { Category } from 'src/app/shared/classes/Category';
 import { Product } from 'src/app/shared/classes/Product';
+import { databaseAdmin } from 'src/app/shared/interfaces/databaseAdmin';
 
 @Component({
   selector: 'app-product-management',
@@ -23,11 +25,13 @@ export class ProductManagementComponent implements OnInit {
   tagObject = new Set();
   categoryObject: Category[];
   isAddProduct: boolean = true;
+  admin!:databaseAdmin;
 
   constructor(private fb:FormBuilder,
     private adminService: AdminService,
     private productService: ProductService,
     private activatedRoute: ActivatedRoute,
+    private loginService:LoginService
     ) {
       let categoriesObservable: Observable<Category[]>;
     categoriesObservable = productService.getAllCategories();
@@ -50,6 +54,10 @@ export class ProductManagementComponent implements OnInit {
           this.defaultFormValues();
         });
       }
+    });
+
+    this.loginService.getAdminObservable().subscribe((sessionAdmin) => {
+      this.admin = sessionAdmin;
     });
     }
 

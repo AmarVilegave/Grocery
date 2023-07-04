@@ -6,6 +6,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { LoginService } from 'src/app/Services/login.service';
+import { databaseAdmin } from 'src/app/shared/interfaces/databaseAdmin';
 @Component({
   selector: 'app-admin-registration',
   templateUrl: './admin-registration.component.html',
@@ -13,9 +14,13 @@ import { LoginService } from 'src/app/Services/login.service';
 })
 export class AdminRegistrationComponent implements OnInit {
   roles: string[] = ['admin', 'super admin', 'moderator'];
+  admin!:databaseAdmin;
 
-
-  constructor(private fb:FormBuilder, private loginService:LoginService) { }
+  constructor(private fb:FormBuilder, private loginService:LoginService) {
+    this.loginService.getAdminObservable().subscribe((sessionAdmin) => {
+      this.admin = sessionAdmin;
+    });
+  }
 
   adminRegistrationForm = this.fb.group({
     fullName: ['', [Validators.required, Validators.minLength(3)]],
@@ -73,10 +78,9 @@ export class AdminRegistrationComponent implements OnInit {
       mobileNo: parseInt(this.adminRegistrationForm.get('mobileNo').value),
       role: this.adminRegistrationForm.get('role').value,
     };
-    console.log(newAdmin);
     this.loginService.registerAdmin(newAdmin);
     alert('Admin Registered Successfully');
-    // window.location.reload();
+    window.location.reload();
   }
 
 

@@ -7,13 +7,13 @@
     <nav>
       <ul>
         <li></li>
-        <li *ngIf="user.fullName"  class="profile-container">
+        <li *ngIf="user.fullName && isTokenValid"  class="profile-container">
           <a>{{ user.fullName }}</a>
           <div class="details">
             <a routerLink="/orders-page">Orders</a>
           </div>
         </li>
-        <li *ngIf="user.fullName">
+        <li *ngIf="user.fullName && isTokenValid">
           <a routerLink="/wishlist">Wishlist</a>
         </li>
         <li>
