@@ -87,6 +87,9 @@ export class LoginService {
       .subscribe((data) => {
         this.setJwtTokenTOSessionStorage(data);
         this.setAdminDataToLocalStorage(data);
+      },
+      (error) => {
+        alert('Login failed check your email or password');
       });
   }
 
