@@ -1,6 +1,6 @@
-<div  class="address-container">
+<div *ngIf="toggle && isTokenValid" class="address-container">
   <div class="container">
-    <form [formGroup]="addressDetailsForm" >
+    <form [formGroup]="addressDetailsForm" (ngSubmit)="onSubmit(user._id)">
       <div class="form-container">
         <div class="address-details-container">
           <div class="heading">Address :</div>
@@ -30,7 +30,7 @@
               *ngIf="addressDetailsForm.get('address').errors?.minlength"
               class="errorMessage"
             >
-              Full-Name Must Be Atleast 3 Characters
+              Full-Name Must Be At least 3 Characters
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
               *ngIf="addressDetailsForm.get('state').errors?.minlength"
               class="errorMessage"
             >
-              State Must Be Atleast 3 Characters
+              State Must Be At least 3 Characters
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
               *ngIf="addressDetailsForm.get('city').errors?.minlength"
               class="errorMessage"
             >
-              City Must Be Atleast 3 Characters
+              City Must Be At least 3 Characters
             </div>
           </div>
         </div>
@@ -145,22 +145,18 @@
               Pin-code is Required
             </div>
             <div
-              *ngIf="addressDetailsForm.get('pincode').errors?.min"
+              *ngIf="addressDetailsForm.get('pincode').errors?.pattern"
               class="errorMessage"
             >
               Pin-code Must Be of 6 Characters
             </div>
-            <div
-              *ngIf="addressDetailsForm.get('pincode').errors?.max"
-              class="errorMessage"
-            >
-              Pin-code Must Be of 6 Characters
-            </div>
+
           </div>
         </div>
         <div class="add-btn-container">
           <button
-
+          *ngIf="user.addresses.length"
+            (click)="toggleDiv()"
 
             class="select-btn"
           >
@@ -177,6 +173,61 @@
       </div>
     </form>
     {{ addressDetailsForm.value | json }}
+  </div>
+</div>
+
+<div class="error-message-container" *ngIf="!isTokenValid">
+  <div class="container">
+    <div class="error-message-content">
+      <div class="message"><span>Error 20103 :</span> Invalid Access Token</div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!toggle && isTokenValid" class="addresses-container">
+  <div class="container">
+    <div class="address-content">
+      <div class="title-btn-container">
+        <div class="title">Saved Addresses</div>
+        <button (click)="toggleDiv()" class="add-btn">Add New Address</button>
+      </div>
+
+      <div class="user-addresses-container">
+        <div class="no-address-container" *ngIf="!user.addresses.length">
+          <div class="error-message-content">
+            <div class="message">
+              <i>No Address Found</i>
+              <p><i>Please Add Address To Proceed</i></p>
+            </div>
+          </div>
+        </div>
+        <div class="details-container" *ngFor="let address of user.addresses">
+          <div class="details">
+            <div class="user-name">{{ user.fullName }}</div>
+            <div class="user-address-container">
+              <div class="address">Address : {{ address.address }}</div>
+              <div class="landmark">Landmark : {{ address.landmark }}</div>
+              <div class="state">State : {{ address.state }}</div>
+              <div class="city">City : {{ address.city }}</div>
+              <div class="pincode">Pincode : {{ address.pincode }}</div>
+            </div>
+          </div>
+          <div class="remove-btn-container">
+            <input
+              id="address"
+              name="check"
+              type="radio"
+              (change)="changeAddress(address)"
+            />
+          </div>
+        </div>
+        <div class="proceed-to-payment-container">
+          <button (click)="onProceedToPayment()" class="proceed-to-payment-btn">
+            Proceed To Payment
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
