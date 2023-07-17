@@ -5,6 +5,8 @@ import {
   ValidationErrors,
   Validators,
 } from '@angular/forms';
+import { LoginService } from 'src/app/Services/login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-registration-page',
@@ -13,7 +15,9 @@ import {
 })
 export class UserRegistrationPageComponent implements OnInit {
 
-  constructor(private fb: FormBuilder,) { }
+  constructor(private fb: FormBuilder,
+    private loginService:LoginService,
+    private router:Router) { }
 
   registrationDetailsForm = this.fb.group({
     fullName: ['', [Validators.required, Validators.minLength(3)]],
@@ -36,6 +40,32 @@ export class UserRegistrationPageComponent implements OnInit {
   });
 
   ngOnInit(): void {
+  }
+
+  registerUser() {
+    const newUser = {
+      fullName: this.registrationDetailsForm.get('fullName').value,
+      email: this.registrationDetailsForm.get('email').value,
+      password: this.registrationDetailsForm.get('password').value,
+      mobileNo: parseInt(this.registrationDetailsForm.get('mobileNo').value),
+      dateOfBirth: this.registrationDetailsForm.get('dateOfBirth').value,
+      isAdmin: false,
+    };
+    this.loginService.registerUser(newUser);
+    this.defaultFormValues();
+    alert('User Registered Successfully');
+    this.router.navigate(['/', 'address']);
+  }
+
+  defaultFormValues() {
+    this.registrationDetailsForm.setValue({
+      fullName: null,
+      email: null,
+      password: null,
+      confirmPassword: null,
+      mobileNo: null,
+      dateOfBirth: null,
+    });
   }
 
   checkFormErrors(dataObj: FormGroup) {

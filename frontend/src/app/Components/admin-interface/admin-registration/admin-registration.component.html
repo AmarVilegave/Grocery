@@ -6,7 +6,7 @@
   </div>
 </div>
 
-<div class="admin-registration-container">
+<div  *ngIf="admin.email" class="admin-registration-container">
   <div class="container">
     <form [formGroup]="adminRegistrationForm" (ngSubmit)="registerAdmin()" >
       <div class="form-container">

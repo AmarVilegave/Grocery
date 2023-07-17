@@ -1,6 +1,6 @@
 <div class="registration-page-container">
   <div class="container">
-    <form [formGroup]="registrationDetailsForm">
+    <form [formGroup]="registrationDetailsForm" (ngSubmit)="registerUser()">
       <div class="form-container">
         <div class="registration-details-container">
           <div class="heading">Full Name :</div>
