@@ -54,7 +54,7 @@ export class UserRegistrationPageComponent implements OnInit {
     this.loginService.registerUser(newUser);
     this.defaultFormValues();
     alert('User Registered Successfully');
-    this.router.navigate(['/', 'address']);
+    this.router.navigate(['/', 'user-address']);
   }
 
   defaultFormValues() {
