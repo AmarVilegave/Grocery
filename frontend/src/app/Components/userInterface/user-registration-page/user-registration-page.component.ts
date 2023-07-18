@@ -51,10 +51,18 @@ export class UserRegistrationPageComponent implements OnInit {
       dateOfBirth: this.registrationDetailsForm.get('dateOfBirth').value,
       isAdmin: false,
     };
+
     this.loginService.registerUser(newUser);
-    this.defaultFormValues();
     alert('User Registered Successfully');
-    this.router.navigate(['/', 'user-address']);
+    setTimeout(() => {
+      this.loginService.tokenFromSessionStorage().subscribe((data: any) => {
+        if (!data.error) {
+          this.router.navigate(['/', 'user-address']).then(() => {
+            window.location.reload();
+          });
+        }
+      });
+    }, 1000);
   }
 
   defaultFormValues() {

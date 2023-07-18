@@ -222,8 +222,11 @@
           </div>
         </div>
         <div class="proceed-to-payment-container">
-          <button (click)="onProceedToPayment()" class="proceed-to-payment-btn">
+          <button *ngIf="cart.items.length" (click)="onProceedToPayment()" class="proceed-to-payment-btn">
             Proceed To Payment
+          </button>
+          <button *ngIf="!cart.items.length" routerLink="/" class="proceed-to-payment-btn">
+            Home
           </button>
         </div>
       </div>

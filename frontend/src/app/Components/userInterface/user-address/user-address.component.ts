@@ -7,10 +7,12 @@ import {
 } from '@angular/forms';
 import { LoginService } from 'src/app/Services/login.service';
 import { OrderService } from 'src/app/Services/order.service';
+import { AddService } from 'src/app/Services/add.service';
 import { SessionUserModel } from 'src/app/shared/classes/SessionUserModel';
 import { databaseAddress } from 'src/app/shared/interfaces/databaseAddress';
 import { Router } from '@angular/router';
 import { AddressModel } from 'src/app/shared/classes/AddressModel';
+import { Cart } from 'src/app/shared/classes/Cart';
 
 @Component({
   selector: 'app-user-address',
@@ -22,11 +24,13 @@ export class UserAddressComponent implements OnInit {
   isTokenValid:boolean=false;
   user!:SessionUserModel;
   selectedAddress:databaseAddress;
+  cart!:Cart
 
   constructor(private fb: FormBuilder,
     private loginService:LoginService,
     private orderService:OrderService,
-    private router:Router) {
+    private router:Router,
+    private addService:AddService) {
       this.loginService.tokenFromSessionStorage().subscribe((data: any) => {
         console.log(data);
         if (data.error) {
@@ -40,6 +44,10 @@ export class UserAddressComponent implements OnInit {
         console.log('sessionUser :', sessionUser);
         this.user = sessionUser;
       });
+
+      this.addService
+      .getObservable()
+      .subscribe((product) => (this.cart = product));
      }
 
   addressDetailsForm = this.fb.group({
