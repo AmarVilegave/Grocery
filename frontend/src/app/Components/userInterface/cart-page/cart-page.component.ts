@@ -83,7 +83,6 @@ export class CartPageComponent implements OnInit {
   placeOrder() {
     let cart = this.cart;
     let user = this.user;
-
     if (user.email) {
       this.orderService.placeOrder(cart, user);
       this.router.navigate(['/', 'user-address']);

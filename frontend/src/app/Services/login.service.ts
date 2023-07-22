@@ -58,8 +58,7 @@ export class LoginService {
 
   updateUserAddress(userId: string, updatedAddress: databaseAddress) {
     let sessionUser = this.getUserFromLocalStorage();
-    console.log('service user', sessionUser);
-    if (userId === sessionUser._id && sessionUser.addresses.length >= 1) {
+    if (userId === sessionUser._id && sessionUser.addresses.length >= 0) {
       sessionUser.addresses.push(updatedAddress);
       this.updateUserDataToLocalStorage(sessionUser);
     }
@@ -122,6 +121,8 @@ export class LoginService {
       })
     );
   }
+
+
 
   updateUserDataToLocalStorage(data: any) {
     localStorage.setItem(

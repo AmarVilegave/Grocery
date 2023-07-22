@@ -48,6 +48,7 @@ export class UserAddressComponent implements OnInit {
       this.addService
       .getObservable()
       .subscribe((product) => (this.cart = product));
+      console.log('user', this.user)
      }
 
   addressDetailsForm = this.fb.group({
