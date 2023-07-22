@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "643d25168484b7fbfe53c9ec"
+  },
+  "fullName": "Amar Vilegave",
+  "email": "amar.vilegave@gmail.com",
+  "password": "$2b$10$bscH9772TCVqOPRnTVh7N./WtWq16Johr9sgx6MBA4rIjo6WDDaNu",
+  "mobileNo": 1234567890,
+  "dateOfBirth": {
+    "$date": "2023-04-04T00:00:00.000Z"
+  },
+  "isAdmin": false,
+  "date": {
+    "$date": "2023-04-17T06:11:51.622Z"
+  },
+  "addresses": [
+    {
+      "address": "dsfhsvb dskdjhsd lkgjfdmcn sldijsldk mcvnsldif lsdflskdfj",
+      "landmark": "dfgjhdlfkgj",
+      "state": "dfg;dfgkhdfnd",
+      "city": "pune",
+      "pincode": 413501,
+      "_id": {
+        "$oid": "643d25368484b7fbfe53c9ef"
+      }
+    },
+    {
+      "address": "shanti sadan, barshi naka, jijau chowk, osmanabad",
+      "landmark": "chamunda sweets",
+      "state": "maharashtra",
+      "city": "pune",
+      "pincode": 413501,
+      "_id": {
+        "$oid": "643febad4124322f12a127bd"
+      }
+    },
+    {
+      "address": "dkjdfsdfsdf",
+      "landmark": "latur",
+      "state": "latur",
+      "city": "latur",
+      "pincode": 413501,
+      "_id": {
+        "$oid": "6492f94fc36ef0bce18ad843"
+      }
+    }
+  ],
+  "wishlist": [
+    {
+      "name": "Banana",
+      "category": {
+        "category": "Fresh Fruits",
+        "tag": "Fruits & Vegetables",
+        "_id": {
+          "$oid": "6411dc02cc81ce3603ecf507"
+        }
+      },
+      "price": 30,
+      "weight": "3 Pieces",
+      "quantity": "9999",
+      "image": [
+        "./assets/Vegetables&Fruits/FreshFruits/banana.jpg"
+      ],
+      "description": "Bananas are a rich source of Vitamin B6 and are high in fibre content. They are known for lowering blood pressure and improving the condition of the cardiovascular system.",
+      "_id": {
+        "$oid": "64548d4f5ceb73a5bcaa8384"
+      },
+      "date": {
+        "$date": "2023-06-13T14:55:26.747Z"
+      }
+    },
+    {
+      "name": "Green Grapes",
+      "category": {
+        "category": "Fresh Vegetables",
+        "tag": "Fruits & Vegetables",
+        "_id": {
+          "$oid": "6411dbbdcc81ce3603ecf505"
+        }
+      },
+      "price": 9999,
+      "weight": "500 g",
+      "quantity": "9999",
+      "image": [
+        "./assets/Vegetables&Fruits/FreshFruits/green-grapes.jpg"
+      ],
+      "description": "Seedless Sonaka Grapes are a rich source of vitamin C and vitamin K. An excellent source of polyphenolic phytochemical compound, resveratrol that gives protection against cancer and coronary heart disease. These grapes can be eaten right off or can be used to make jelly, juice or wine.",
+      "_id": {
+        "$oid": "64548dd15ceb73a5bcaa8397"
+      },
+      "date": {
+        "$date": "2023-06-13T14:56:13.507Z"
+      }
+    },
+    {
+      "name": "Chitale Pasteurised Cow Fresh Milk",
+      "category": {
+        "category": "Milk",
+        "tag": "Dairy & Breakfast",
+        "_id": {
+          "$oid": "6411dc28cc81ce3603ecf509"
+        }
+      },
+      "price": 27,
+      "weight": "500 ml",
+      "quantity": "9999",
+      "image": [
+        "./assets/Dairy&Breakfast/Milk/chitale-cow-milk.jpg"
+      ],
+      "description": "Pure, healthy and pasteurised. Packed with vital nutrients and minerals. Perfect for preparing tea, coffee or desserts",
+      "_id": {
+        "$oid": "645602674c8ea63fd906aad5"
+      },
+      "date": {
+        "$date": "2023-06-15T08:56:25.077Z"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643d6062dc97a7119d2e6353"
+  },
+  "fullName": "bhushan nadkar",
+  "email": "bhushan.nadkar@gmail.com",
+  "password": "$2b$10$RZkz2xtI3ox7Udlpf.SoIODN0/tNZq6lwGxjuQ2xoCuGrsODi6v.O",
+  "mobileNo": 1234567890,
+  "dateOfBirth": {
+    "$date": "2023-04-05T00:00:00.000Z"
+  },
+  "isAdmin": false,
+  "date": {
+    "$date": "2023-04-17T14:39:09.399Z"
+  },
+  "addresses": [],
+  "wishlist": [],
+  "__v": 0
+}]

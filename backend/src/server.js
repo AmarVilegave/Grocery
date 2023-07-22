@@ -18,7 +18,7 @@ if (!config.get("jwtPrivateKey")) {
 
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/grocery-shopping")
+  .connect("mongodb://mongodb:27017/grocery-shopping")
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Could not connect to MongoDB : " + err));
 

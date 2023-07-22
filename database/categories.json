@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "6411dbbdcc81ce3603ecf505"
+  },
+  "category": "Fresh Vegetables",
+  "tag": "Fruits & Vegetables",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dc02cc81ce3603ecf507"
+  },
+  "category": "Fresh Fruits",
+  "tag": "Fruits & Vegetables",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dc28cc81ce3603ecf509"
+  },
+  "category": "Milk",
+  "tag": "Dairy & Breakfast",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dc3ecc81ce3603ecf50b"
+  },
+  "category": "Breakfast Cereal",
+  "tag": "Dairy & Breakfast",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dc5acc81ce3603ecf50d"
+  },
+  "category": "Soft Drinks",
+  "tag": "Cold Drinks & Juices",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dc6ecc81ce3603ecf50f"
+  },
+  "category": "Fruit Juices",
+  "tag": "Cold Drinks & Juices",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dc8ecc81ce3603ecf511"
+  },
+  "category": "Cookies",
+  "tag": "Cookies & Cream Biscuits",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dca5cc81ce3603ecf513"
+  },
+  "category": "Cream Biscuits",
+  "tag": "Cookies & Cream Biscuits",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dcd6cc81ce3603ecf515"
+  },
+  "category": "Dry Fruits",
+  "tag": "Dry Fruits, Spices & Oil",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dce8cc81ce3603ecf517"
+  },
+  "category": "Spices",
+  "tag": "Dry Fruits, Spices & Oil",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dcf8cc81ce3603ecf519"
+  },
+  "category": "Oil",
+  "tag": "Dry Fruits, Spices & Oil",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dd11cc81ce3603ecf51b"
+  },
+  "category": "Atta",
+  "tag": "Atta, Rice & Dal",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dd1acc81ce3603ecf51d"
+  },
+  "category": "Rice",
+  "tag": "Atta, Rice & Dal",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6411dd22cc81ce3603ecf51f"
+  },
+  "category": "Dal",
+  "tag": "Atta, Rice & Dal",
+  "__v": 0
+}]
