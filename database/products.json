@@ -1,0 +1,1611 @@
+[{
+  "_id": {
+    "$oid": "6453b983a317f0b08f8ad387"
+  },
+  "name": "Potato",
+  "category": {
+    "category": "Fresh Vegetables",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dbbdcc81ce3603ecf505"
+    }
+  },
+  "price": 35,
+  "weight": "1 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshVegetables/potato.jpg"
+  ],
+  "description": "Contains Vitamin C, Potassium, starch,Potato helps in reducing inflammation, promote digestion and are good for skin.",
+  "date": {
+    "$date": "2023-05-04T13:56:19.244Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6453b9d9a317f0b08f8ad396"
+  },
+  "name": "Tomato",
+  "category": {
+    "category": "Fresh Vegetables",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dbbdcc81ce3603ecf505"
+    }
+  },
+  "price": 15,
+  "weight": "1 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshVegetables/tomato.jpg"
+  ],
+  "description": "Contains Vitamin C, Vitamin K. Rich in carotene.Vitamin C acts as a powerful antioxidant and also helps formation of collagen that is responsible for skin and hair health.",
+  "date": {
+    "$date": "2023-05-04T13:57:45.835Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548c505ceb73a5bcaa836f"
+  },
+  "name": "Onion",
+  "category": {
+    "category": "Fresh Vegetables",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dbbdcc81ce3603ecf505"
+    }
+  },
+  "price": 26,
+  "weight": "1 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshVegetables/onion.jpg"
+  ],
+  "description": "Contains Folic acid, Vitamin C and Amino acid .Vitamin C acts as a powerful antioxidant and also helps formation of collagen that is responsible for skin and hair health.",
+  "date": {
+    "$date": "2023-05-05T04:55:44.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548c795ceb73a5bcaa8376"
+  },
+  "name": "Carrot",
+  "category": {
+    "category": "Fresh Vegetables",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dbbdcc81ce3603ecf505"
+    }
+  },
+  "price": 28,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshVegetables/carrot.jpg"
+  ],
+  "description": "Contain Fibre, VItamin A, Vitamin K, Carotenoids, Aminoacid.Vitamin A improves eye health and, boost immunity. Fibres helps keeping up the digestion. Vitamin C helps improving skiin and hair health.",
+  "date": {
+    "$date": "2023-05-05T04:56:25.501Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548cca5ceb73a5bcaa837d"
+  },
+  "name": "Beetroot",
+  "category": {
+    "category": "Fresh Vegetables",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dbbdcc81ce3603ecf505"
+    }
+  },
+  "price": 15,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshVegetables/beetroot.jpg"
+  ],
+  "description": "'Contains Fibre, Folic acid, Potassium.Beetroot helps with improved blood flow, improve digestive health and fight inflammation.",
+  "date": {
+    "$date": "2023-05-05T04:57:46.526Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548d4f5ceb73a5bcaa8384"
+  },
+  "name": "Banana",
+  "category": {
+    "category": "Fresh Fruits",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dc02cc81ce3603ecf507"
+    }
+  },
+  "price": 30,
+  "weight": "3 Pieces",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshFruits/banana.jpg"
+  ],
+  "description": "Bananas are a rich source of Vitamin B6 and are high in fibre content. They are known for lowering blood pressure and improving the condition of the cardiovascular system.",
+  "date": {
+    "$date": "2023-05-05T04:59:59.877Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548da15ceb73a5bcaa8390"
+  },
+  "name": "Kinnow",
+  "category": {
+    "category": "Fresh Fruits",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dc02cc81ce3603ecf507"
+    }
+  },
+  "price": 50,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshFruits/kinnow.jpg"
+  ],
+  "description": "Enriched with vitamin C, folate, soluble fibre and anti-oxidants, Imported Orange strengthens the immune system, regulates blood sugar, increases metabolism and is good for hair and skin.",
+  "date": {
+    "$date": "2023-05-05T05:01:21.138Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548dd15ceb73a5bcaa8397"
+  },
+  "name": "Green Grapes",
+  "category": {
+    "category": "Fresh Fruits",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dc02cc81ce3603ecf507"
+    }
+  },
+  "price": 79,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshFruits/green-grapes.jpg"
+  ],
+  "description": "Seedless Sonaka Grapes are a rich source of vitamin C and vitamin K. An excellent source of polyphenolic phytochemical compound, resveratrol that gives protection against cancer and coronary heart disease. These grapes can be eaten right off or can be used to make jelly, juice or wine.",
+  "date": {
+    "$date": "2023-05-05T05:02:09.755Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548e0a5ceb73a5bcaa839e"
+  },
+  "name": "Sapota (Chikoo)",
+  "category": {
+    "category": "Fresh Fruits",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dc02cc81ce3603ecf507"
+    }
+  },
+  "price": 45,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshFruits/sapots.jpg"
+  ],
+  "description": "Contains Fibre, Vitamin C, Amino acid.Helps strengthening the immune system, digestive system and keeps your eyes and skin healthy.",
+  "date": {
+    "$date": "2023-05-05T05:03:06.924Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548e315ceb73a5bcaa83a5"
+  },
+  "name": "Kiwi",
+  "category": {
+    "category": "Fresh Fruits",
+    "tag": "Fruits & Vegetables",
+    "_id": {
+      "$oid": "6411dc02cc81ce3603ecf507"
+    }
+  },
+  "price": 132,
+  "weight": "3 Pieces",
+  "quantity": "50",
+  "image": [
+    "./assets/Vegetables&Fruits/FreshFruits/kiwi.jpg"
+  ],
+  "description": "Rich source of Vitamin C, Contains Fibre Vitamin K, Amino acid.1. Vitamin C acts as a powerful antioxidant and also helps formation of collagen that is responsible for skin and hair health. Vitamin C helps in boosting immunity, keeping ailments at the bay.",
+  "date": {
+    "$date": "2023-05-05T05:03:45.539Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548e5b5ceb73a5bcaa83ac"
+  },
+  "name": "Kellogg's Corn Flakes With Real Honey",
+  "category": {
+    "category": "Breakfast Cereal",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc3ecc81ce3603ecf50b"
+    }
+  },
+  "price": 160,
+  "weight": "300 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/BreakfastCereal/Kelloggs-Corn-Flakes-With-Real-Honey.jpg"
+  ],
+  "description": "Nourishing & Tasty Breakfast – Start your day with a nourishing and tasty breakfast cereal such as ‘Kellogg’s Corn Flakes with Real Honey. It is quick to prepare and yummy to eat. It comes with the goodness of real Honey and Iron Shakti.Packed with Nutrients – ‘Kellogg’s Corn Flakes with Real Honey’ is not only yummy but is also High in Iron, Vitamin B1, B2, B3, B6, Vitamin C and Source of Vitamin B12 and Folate.Naturally Cholesterol-free - ‘Kellogg’s Corn Flakes with Real Honey’ is naturally cholesterol-freeMade from select Grains – Making these Corn Flakes starts from the sun ripened corn. The selected grains are then cooked and lightly flattened, and finally they are gently toasted to develop your delicious golden cereal.",
+  "date": {
+    "$date": "2023-05-05T05:04:27.379Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64548eba5ceb73a5bcaa83b3"
+  },
+  "name": "Kellogg's Original Cereals Corn Flakes",
+  "category": {
+    "category": "Breakfast Cereal",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc3ecc81ce3603ecf50b"
+    }
+  },
+  "price": 205,
+  "weight": "475 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/BreakfastCereal/Kelloggs-Original-Cereals-Corn-Flakes.jpg"
+  ],
+  "description": "Kellogg’s Corn Flakes is a nourishing and tasty ready-to-eat breakfast cereal which is High in Iron, Vitamin C and key essential B group Vitamins such as B1, B2, B3, B6, B12 and Folate. Kellogg’s Corn Flakes Original is naturally cholesterol free. It contains only 1% Fat",
+  "date": {
+    "$date": "2023-05-05T05:06:02.877Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645600f24c8ea63fd906aab0"
+  },
+  "name": "Kellogg's Special K Cereal",
+  "category": {
+    "category": "Breakfast Cereal",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc3ecc81ce3603ecf50b"
+    }
+  },
+  "price": 238,
+  "weight": "455 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/BreakfastCereal/Kelloggs-Special-K-Cereal.jpg"
+  ],
+  "description": "Naturally Low-Fat Food – Kick Start your weight management journey with Kellogg’s Special K Original which is a low-fat breakfast and take a step towards a nourishing lifestyle. It contains only 2% FatPacked with Nutrients - Kellogg’s Special K Original is high in Vitamin C, Vitamin B1, B2, B3, B6, folate and Vitamin B12.Everyday Nourishment – Kellogg’s Special K Original is a delicious, crunchy breakfast cereal with the goodness of wheat and rice. It is naturally low fat and cholesterol free, High in B group Vitamins and a source of Protein & Fibre.Delicious Ways to eat Kellogg’s Special K – Relish Kellogg’s Special K Original with milk or whisked yoghurt (dahi) along with your favourite fruits or dry fruits. Nourish yourself everyday with this deliciously satisfying food and see if you feel the difference",
+  "date": {
+    "$date": "2023-05-06T07:25:38.411Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645601664c8ea63fd906aac0"
+  },
+  "name": "Quaker Rolled Oats",
+  "category": {
+    "category": "Breakfast Cereal",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc3ecc81ce3603ecf50b"
+    }
+  },
+  "price": 79,
+  "weight": "400 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/BreakfastCereal/quaker-rolled-oats.jpg"
+  ],
+  "description": "Lasting Energy  Start the day with a bowlful of nutritious & tasty Quaker Oats. These 100% Natural Wholegrain Oats have complex carbohydrates that breaks down slowly to provide energy that lasts.Helps reduce cholestrol  As part of a diet low in saturated fat, sodium and cholesterol, alongwith a healthy and active lifestyle, consumption of 2 bowls of Oats everyday giving 3 g soluble fiber Beta glucan may help reduce cholesterol.Rich in Fiber and Source of Protein.Helps Maintain Weight Make it a part of fitness and weight loss journey.Easy to Cook  Ready in just 3 minutes. Quaker Oats can be eaten sweet or savoury or add them as a wholesome ingredient in your favorite dishes, such as Idli or Poha or Masala Oats or whip some classic oatmeal cookies. Enjoy the wholesome benefits of this whole grain in any number of meals or snacks, any time of day.",
+  "date": {
+    "$date": "2023-05-06T07:27:34.097Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645601ce4c8ea63fd906aac7"
+  },
+  "name": "Saffola Classic Masala Oats",
+  "category": {
+    "category": "Breakfast Cereal",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc3ecc81ce3603ecf50b"
+    }
+  },
+  "price": 16,
+  "weight": "38 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/BreakfastCereal/saffola-classic-masala-oats.jpg"
+  ],
+  "description": "Tasty blend of authentic Indian spices. Crunchy mix of carrots, onions and french beans. High in fibre & Protein. Controls your hunger pangs and manage weight. Up to 70% Less Fat. No Added Preservatives.",
+  "date": {
+    "$date": "2023-05-06T07:29:18.965Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645602064c8ea63fd906aace"
+  },
+  "name": "Amul Taaza Homogenised Toned Milk",
+  "category": {
+    "category": "Milk",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc28cc81ce3603ecf509"
+    }
+  },
+  "price": 72,
+  "weight": "1 L",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/Milk/amul-taza-homogenised-toned-milk.jpg"
+  ],
+  "description": "Amul Taaza Toned (Tetrapak) Milk is pasteurized with great nutritional value. It can be consumed directly or can be used for preparing tea, coffee, sweets, khoya, curd, buttermilk, ghee etc.",
+  "date": {
+    "$date": "2023-05-06T07:30:14.700Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645602674c8ea63fd906aad5"
+  },
+  "name": "Chitale Pasteurised Cow Fresh Milk",
+  "category": {
+    "category": "Milk",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc28cc81ce3603ecf509"
+    }
+  },
+  "price": 27,
+  "weight": "500 ml",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/Milk/chitale-cow-milk.jpg"
+  ],
+  "description": "Pure, healthy and pasteurised. Packed with vital nutrients and minerals. Perfect for preparing tea, coffee or desserts",
+  "date": {
+    "$date": "2023-05-06T07:31:51.222Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645602b14c8ea63fd906aadc"
+  },
+  "name": "Chitale Full Cream Fresh Milk",
+  "category": {
+    "category": "Milk",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc28cc81ce3603ecf509"
+    }
+  },
+  "price": 35,
+  "weight": "500 ml",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/Milk/chitale-full-cream-milk.jpg"
+  ],
+  "description": "Pasteurised full cream milk. Full of nutrition. Perfect for preparing tea, coffee or desserts.",
+  "date": {
+    "$date": "2023-05-06T07:33:05.700Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645602dc4c8ea63fd906aae3"
+  },
+  "name": "Go Supremo Cow Milk",
+  "category": {
+    "category": "Milk",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc28cc81ce3603ecf509"
+    }
+  },
+  "price": 76,
+  "weight": "1 L",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/Milk/go-supremo-cow-milk.jpg"
+  ],
+  "description": "Pure and fresh cow's milk Wholesome and hearty Packed with great nutrition Rich creamy taste An excellent source of calcium Ideal for dessert preparation",
+  "date": {
+    "$date": "2023-05-06T07:33:48.121Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645603274c8ea63fd906aaea"
+  },
+  "name": "Yakult Probiotic Health Drink",
+  "category": {
+    "category": "Milk",
+    "tag": "Dairy & Breakfast",
+    "_id": {
+      "$oid": "6411dc28cc81ce3603ecf509"
+    }
+  },
+  "price": 80,
+  "weight": "65 ml",
+  "quantity": "50",
+  "image": [
+    "./assets/Dairy&Breakfast/Milk/yakult-probiotic-health-drink.jpg"
+  ],
+  "description": "Yakult is a delicious probiotic drink that helps improve digestion and helps build immunity. Yakult contains 6.5 billion beneficial bacteria that reach our intestines alive and restore the balance of the beneficial or friendly bacteria in the gut",
+  "date": {
+    "$date": "2023-05-06T07:35:03.828Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645603b84c8ea63fd906aaf1"
+  },
+  "name": "Maaza Mango Drink 1.2 l",
+  "category": {
+    "category": "Fruit Juices",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc6ecc81ce3603ecf50f"
+    }
+  },
+  "price": 70,
+  "weight": "1.2 L",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/FruitsJuices/Maaza-Mango-Drink-1.2-l.jpg"
+  ],
+  "description": "Drive away all your Monday blues and turn your Fridays into Friyays with Maaza® mango drink. Synonymous with the very spirit of mangoes, Maaza® lets you enjoy the moments of carefree indulgence. This mango drink is universally loved for its taste, color, thickness, and wholesome properties. Made from real mango pulp of hand-picked real Alphonso mangoes, this ready-to-serve fruit drink offers a fulfilling experience down to the last sip.",
+  "date": {
+    "$date": "2023-05-06T07:37:28.842Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645604954c8ea63fd906aaf8"
+  },
+  "name": "Real Fruit Power Cranberry Juice",
+  "category": {
+    "category": "Fruit Juices",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc6ecc81ce3603ecf50f"
+    }
+  },
+  "price": 111,
+  "weight": "1 L",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/FruitsJuices/Real-Fruit-Power-Cranberry-Juice.jpg"
+  ],
+  "description": "Real Cranberry Fruit Power is the loved cranberry fruit beverage in the country. It has been well accepted as the most preferred base for many delightful mocktails (like cranberry fruit punch)",
+  "date": {
+    "$date": "2023-05-06T07:41:09.855Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645604e64c8ea63fd906aaff"
+  },
+  "name": "Real Fruit Power Litchi Juice",
+  "category": {
+    "category": "Fruit Juices",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc6ecc81ce3603ecf50f"
+    }
+  },
+  "price": 103,
+  "weight": "1 L",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/FruitsJuices/Real-Fruit-Power-Litchi-Juice.jpg"
+  ],
+  "description": "Born from the peerless, world renowned Muzaffarpur Litchis, these deliciously succulent litchis are an annual delight for litchi lovers who eagerly wait for the fruit every year.",
+  "date": {
+    "$date": "2023-05-06T07:42:30.844Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645605314c8ea63fd906ab06"
+  },
+  "name": "Real Fruit Power Orange Juice",
+  "category": {
+    "category": "Fruit Juices",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc6ecc81ce3603ecf50f"
+    }
+  },
+  "price": 105,
+  "weight": "1 L",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/FruitsJuices/Real-Fruit-Power-Orange-Juice.jpg"
+  ],
+  "description": "Discover the zingy taste and goodness of oranges in every sip of Real Orange Juice. A wholesome beverage packed with energy, rich in taste and with no added colour or preservatives",
+  "date": {
+    "$date": "2023-05-06T07:43:45.837Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645605834c8ea63fd906ab0d"
+  },
+  "name": "Slice Thickest Mango Drink",
+  "category": {
+    "category": "Fruit Juices",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc6ecc81ce3603ecf50f"
+    }
+  },
+  "price": 40,
+  "weight": "600 ml",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/FruitsJuices/Slice-Thickest-Mango-Drink.jpg"
+  ],
+  "description": "Refreshing mango drink. Made from rich, juicy and succulent mangoes. Scrumptious taste. A delightful treat ideal to kick start the day.",
+  "date": {
+    "$date": "2023-05-06T07:45:07.841Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645606274c8ea63fd906ab14"
+  },
+  "name": "Coca-Cola Soft Drink (750 ml)",
+  "category": {
+    "category": "Soft Drinks",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc5acc81ce3603ecf50d"
+    }
+  },
+  "price": 40,
+  "weight": "750 ml",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/SoftDrinks/Coca-Cola-Soft-Drink-(750 ml).jpg"
+  ],
+  "description": "Happiness is all about creating Real Magic from everyday moments, spent together with family or friends. Turn up the energy during an afternoon lull, sweltering heat and long exhausting days with the crisp, delicious taste of Coca-Cola Original that is uplifting till the last sip. Make meals tastier with Coke, be it peri-peri or extra cheese, every slice of pizza is made yummier with a Coke. Enjoy this soft drink ice-cold for maximum refreshment and to add magic to your family meals because there’s magic when we eat together. Enjoy Coke while playing fun games, binge-watching your favorite series, listening to your favorite song and make the most of your break moments. Explore ways you can be closer to your loved ones with drinks worth savoring, playlists worth listening and memories worth remembering. The oh-so refreshing fizz and original taste of Coca-Cola drink make life’s special moments a little more special. Whether it’s about raising a toast to a new partnership or celebrating the win, sharing a Coke never ends.",
+  "date": {
+    "$date": "2023-05-06T07:47:51.997Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645606704c8ea63fd906ab1b"
+  },
+  "name": "Mountain Dew Grip Soft Drink",
+  "category": {
+    "category": "Soft Drinks",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc5acc81ce3603ecf50d"
+    }
+  },
+  "price": 33,
+  "weight": "750 ml",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/SoftDrinks/Mountain-Dew-Grip-Soft-Drink.jpg"
+  ],
+  "description": "Citrus flavoured carbonated drink Charges with refreshment Offers exhilarating taste in every sip Perfect thirst quencher",
+  "date": {
+    "$date": "2023-05-06T07:49:04.838Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645606bc4c8ea63fd906ab22"
+  },
+  "name": "Mountain Dew Soft Drink",
+  "category": {
+    "category": "Soft Drinks",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc5acc81ce3603ecf50d"
+    }
+  },
+  "price": 34,
+  "weight": "250 ml",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/SoftDrinks/Mountain-Dew-Soft-Drink.jpg"
+  ],
+  "description": "Strong, high-energy and refreshing carbonated soft drink Fresh, crisp and extreme citrus taste Perfect beverage to quench your thirst A great drink to celebrate the bold, adventurous and rebellious spirit of youth",
+  "date": {
+    "$date": "2023-05-06T07:50:20.831Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645606ec4c8ea63fd906ab29"
+  },
+  "name": "Sprite Lime Flavored Soft Drink 750 ml",
+  "category": {
+    "category": "Soft Drinks",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc5acc81ce3603ecf50d"
+    }
+  },
+  "price": 40,
+  "weight": "750 ml",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/SoftDrinks/Sprite-Lime-Flavored-Soft-Drink-750ml.jpg"
+  ],
+  "description": "We didn’t expect you to read this because by now you could have been on the checkout page with the REFRESHING SPRITE in your cart. Seems like you need more convincing so here you go: Sprite is a clear lime drink truly meant to quench your thirst & refresh you since 1999. Now, don’t confuse ‘thirst’ with anything else under the sky! It’s not your agony aunt but just a drink that refreshes you. Its crisp lemon-lime taste makes you feel like you’ve just stepped out of a cold shower. Clear Hai?",
+  "date": {
+    "$date": "2023-05-06T07:51:08.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645607244c8ea63fd906ab30"
+  },
+  "name": "Thums Up Soft Drink (750 ml)",
+  "category": {
+    "category": "Soft Drinks",
+    "tag": "Cold Drinks & Juices",
+    "_id": {
+      "$oid": "6411dc5acc81ce3603ecf50d"
+    }
+  },
+  "price": 40,
+  "weight": "750 ml",
+  "quantity": "50",
+  "image": [
+    "./assets/ColdDrinks&Juices/SoftDrinks/Thums-Up-Soft-Drink-(750 ml).jpg"
+  ],
+  "description": "Live your life to the fullest with a passion to do something crazy each day. Taste the thunder and set yourself free to take audacious steps in life. From skydiving to going on a solo trip, bring out the toofani, adventurous side of yours with Thums Up. Add some enthusiasm to your life and dare to do something big every day. Raise the excitement of any occasion to toofani levels with that strong, refreshing fizz and thunderous taste of Thums Up drink, packed with a punch of soda. Whether itâ€™s about getting a second wind in the match or cheering up your team, thereâ€™s a Thums Up for every champion in you. Ride the epic wave of excitement and adventure with Thumbs Up soft drink â€“ anytime, anywhere.",
+  "date": {
+    "$date": "2023-05-06T07:52:04.574Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dbeda1c9784c2d87f7191"
+  },
+  "name": "Dukes Bourbon Biscuits",
+  "category": {
+    "category": "Cream Biscuits",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dca5cc81ce3603ecf513"
+    }
+  },
+  "price": 36,
+  "weight": "150 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/CreamBiscuits/DukesBourbonBiscuits.jpg"
+  ],
+  "description": "Sumptuously delicious, chocolaty and indulgent cookies, crammed with scrummy, smooth and luscious creme, sprinkled with sugar crystals, offers a delightfully rich and intense chocolaty experience.",
+  "date": {
+    "$date": "2023-05-24T07:38:02.496Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dbfce1c9784c2d87f71a9"
+  },
+  "name": "Britannia Bourbon Biscuit",
+  "category": {
+    "category": "Cream Biscuits",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dca5cc81ce3603ecf513"
+    }
+  },
+  "price": 100,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/CreamBiscuits/BritanniaBourbon.jpg"
+  ],
+  "description": "Britannia Bourbon Chocolate Cream are a delightful combination of smooth chocolate cream with crunchy chocolate biscuits topped with sparkling sugar crystals. Every bite of these delicious, chocolaty and indulgent cookies entices you for more and more. The satisfying and rich taste of chocolate enclosed in crispy, crunchy biscuits gives you a mouth-watering experience. Britannia biscuits, cookies, cakes and rusk are a perfect companion for your tea.",
+  "date": {
+    "$date": "2023-05-24T07:42:06.976Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dc06b1c9784c2d87f71bf"
+  },
+  "name": "Oreo Choco Flavour Sandwich Cream Biscuits",
+  "category": {
+    "category": "Cream Biscuits",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dca5cc81ce3603ecf513"
+    }
+  },
+  "price": 35,
+  "weight": "135 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/CreamBiscuits/OreoChocoFlavourBiscuits.jpg"
+  ],
+  "description": "Oreo chocolate crÃ¨me cookie brings together the rich and smooth flavours of creme filling with the bold taste of crunchy chocolate biscuits. Each pack of Cadbury Oreo Chocolate creme biscuit contains 120 g of biscuits. This rich chocolate creme filling cookies contain 483 calories and 19.7g of fat and 0mg of cholesterol per 100g. An Ideal option for snack lovers and perfect to eat anytime. it is an ultimate combination designed to make you go \"WOW\".",
+  "date": {
+    "$date": "2023-05-24T07:44:43.370Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dc2fa1c9784c2d87f71d5"
+  },
+  "name": "Oreo Original Vanilla Sandwich Cream Biscuits",
+  "category": {
+    "category": "Cream Biscuits",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dca5cc81ce3603ecf513"
+    }
+  },
+  "price": 35,
+  "weight": "120 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/CreamBiscuits/OreoOriginalVanillaCreamBiscuits.jpg"
+  ],
+  "description": "Oreo vanilla crème cookie brings together the rich and smooth flavours of creme filling with the bold taste of crunchy chocolate biscuits. OREO cookies are perfect for snacking or enjoying as a treat at any time of the day. It is suitable for vegetarians. Twist, lick, dunk! Enjoy it with a fresh glass of milk or add them to your favourite desserts.",
+  "date": {
+    "$date": "2023-05-24T07:55:38.856Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dc38e1c9784c2d87f71eb"
+  },
+  "name": "Parle Fab Jam-In Biscuit",
+  "category": {
+    "category": "Cream Biscuits",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dca5cc81ce3603ecf513"
+    }
+  },
+  "price": 92,
+  "weight": "495 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/CreamBiscuits/ParleFabJamInBiscuit.jpg"
+  ],
+  "description": "Parle Sandwich Biscuits Jam in Fruit Flavour relishes the flavoursome fusion of biscuit and cream with a sugar topping. With each bite, experience a party of flavours in your mouth as the delectable cream melts along with the lingering flavour of jam.",
+  "date": {
+    "$date": "2023-05-24T07:58:06.845Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dc46b1c9784c2d87f7201"
+  },
+  "name": "Britannia Good Day Butter Biscuit",
+  "category": {
+    "category": "Cookies",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dc8ecc81ce3603ecf511"
+    }
+  },
+  "price": 10,
+  "weight": "60 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/Cookies/BritanniaGoodDayButterBiscuit.jpg"
+  ],
+  "description": "Cispy cookies Baked to perfection Rich melt-in-mouth taste of butter",
+  "date": {
+    "$date": "2023-05-24T08:01:47.227Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dc5301c9784c2d87f7225"
+  },
+  "name": "Britannia Good Day Cashew Biscuit",
+  "category": {
+    "category": "Cookies",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dc8ecc81ce3603ecf511"
+    }
+  },
+  "price": 50,
+  "weight": "200 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/Cookies/BritanniaGoodDayCashewBiscuit.jpg"
+  ],
+  "description": "Britannia Good Day Cashew Cookies are delicious crunchy cookies blended with a nutty flavour of cashews. 100% vegetarian, cashews cookies satisfy your cravings between meals. Britannia biscuits, cookies, cakes and rusk are a perfect companion for your tea.",
+  "date": {
+    "$date": "2023-05-24T08:05:04.288Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dc5d91c9784c2d87f7246"
+  },
+  "name": "Unibic Cashew Badam Cookies",
+  "category": {
+    "category": "Cookies",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dc8ecc81ce3603ecf511"
+    }
+  },
+  "price": 150,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/Cookies/UnibicCashewBadamCookies.jpg"
+  ],
+  "description": "Made up of quality ingredients Perfect to please your taste buds Healthy alternative to regular snacking Perfect partner for morning or evening brew",
+  "date": {
+    "$date": "2023-05-24T08:07:53.466Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dc6621c9784c2d87f725c"
+  },
+  "name": "Unibic Choco Chip Cookies",
+  "category": {
+    "category": "Cookies",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dc8ecc81ce3603ecf511"
+    }
+  },
+  "price": 190,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/Cookies/UnibicChocoChipCookies.jpg"
+  ],
+  "description": "Rich choco nut cookies Zero percent cholesterol Trans fat free Perfect tea time accompaniment",
+  "date": {
+    "$date": "2023-05-24T08:10:10.248Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dc6f01c9784c2d87f7272"
+  },
+  "name": "Unibic Choco Kiss Cookies",
+  "category": {
+    "category": "Cookies",
+    "tag": "Cookies & Cream Biscuits",
+    "_id": {
+      "$oid": "6411dc8ecc81ce3603ecf511"
+    }
+  },
+  "price": 160,
+  "weight": "250 g",
+  "quantity": "50",
+  "image": [
+    "./assets/Cookies&CreamBiscuits/Cookies/UnibicChocoKissCookies.jpg"
+  ],
+  "description": "Crunchy cookie Filled liquid chocolate cream",
+  "date": {
+    "$date": "2023-05-24T08:12:32.137Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df31d1c9784c2d87f7288"
+  },
+  "name": "American Almonds",
+  "category": {
+    "category": "Dry Fruits",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcd6cc81ce3603ecf515"
+    }
+  },
+  "price": 225,
+  "weight": "200 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/DryFruits/AmericanAlmonds.jpg"
+  ],
+  "description": "Grofers Mother's Choice American Almonds are nutritious and healthy. They come with a crunchy bite that enhances the flavour. The wholesome constituents of these nuts provide the required amount of energy to the body and help to maintain brain health. Healthy and tasty, it is a perfect addition to both sweetmeats and savouries. Packed with nutrients.",
+  "date": {
+    "$date": "2023-05-24T11:21:01.467Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df3741c9784c2d87f729e"
+  },
+  "name": "GMC Anjeer",
+  "category": {
+    "category": "Dry Fruits",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcd6cc81ce3603ecf515"
+    }
+  },
+  "price": 320,
+  "weight": "200 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/DryFruits/GMCAnjeer.jpg"
+  ],
+  "description": "A range of carefully selected healthy dried figs is packed in Grofers Mother’s Choice Dried figs, Anjeer packet, they are very rich and sweet, it provides a high source of vitamins, fibre, and iron, ideal for bakery products as they are rich in taste and nutrition, it does not contain fats and is used desserts, serves as a trial mix in cereals, shakes, or smoothies, etc.",
+  "date": {
+    "$date": "2023-05-24T11:22:28.811Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df3ca1c9784c2d87f72b6"
+  },
+  "name": "GMC Salted Pistachios",
+  "category": {
+    "category": "Dry Fruits",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcd6cc81ce3603ecf515"
+    }
+  },
+  "price": 399,
+  "weight": "200 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/DryFruits/GMCSaltedPistachios.jpg"
+  ],
+  "description": "Give yourself a delightful, healthy snack with Grofers Mother's Choice Salted Pistachios that are one of the best dry fruits for maintaining a healthy diet. These salted kernels are packed with nutrients and add great flavour to any dish. Perfect to be consumed as a part of a healthy diet as they are full of energy and nutrients. Seasoned with a dash of salt to add to the overall taste. Tasty addition to salads, appetizers, desserts etc. for a nutty flavour.",
+  "date": {
+    "$date": "2023-05-24T11:23:54.888Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df4251c9784c2d87f72ce"
+  },
+  "name": "GMC Walnut Kernels",
+  "category": {
+    "category": "Dry Fruits",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcd6cc81ce3603ecf515"
+    }
+  },
+  "price": 395,
+  "weight": "200 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/DryFruits/GMCWalnutKernels.jpg"
+  ],
+  "description": "Bring the authentic taste of walnuts to your meals with Grofers Mother's Choice Kernels Walnuts that are packed with energy and nutrients. One of the best additions to sweet and savoury dishes alike for a nutty and delicious flavour. Energy-packed kernels that provide nutrition to the body. A pleasantly nutty flavour. Ideal for snacking, cooking, and baking. A great topping to add the perfect crunch to desserts, ice cream and shakes",
+  "date": {
+    "$date": "2023-05-24T11:25:25.545Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df4741c9784c2d87f72e4"
+  },
+  "name": "Grocery Cashews",
+  "category": {
+    "category": "Dry Fruits",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcd6cc81ce3603ecf515"
+    }
+  },
+  "price": 235,
+  "weight": "200 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/DryFruits/GroceryCashews.jpg"
+  ],
+  "description": "The fat present in cashew nuts are responsible for growth of good cholesterol and reduction of the bad cholesterol. Cashews gives a lot of energy and also keeps you satiated for a long time",
+  "date": {
+    "$date": "2023-05-24T11:26:44.735Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df6e71c9784c2d87f731e"
+  },
+  "name": "Dhara Kachi Ghani Mustard Oil",
+  "category": {
+    "category": "Oil",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcf8cc81ce3603ecf519"
+    }
+  },
+  "price": 190,
+  "weight": "1 l",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Oil/DharaKachiGhaniMustardOil.jpg"
+  ],
+  "description": "Dhara Mustard Oil is made from the first press of mustard seeds which keeps the delectable aromaintact. This particular varient of musturd oil has been designed specially to deliver sharp taste, without strong pungency.",
+  "date": {
+    "$date": "2023-05-24T11:37:11.921Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df7841c9784c2d87f7334"
+  },
+  "name": "Fortune Rice Bran Oil",
+  "category": {
+    "category": "Oil",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcf8cc81ce3603ecf519"
+    }
+  },
+  "price": 185,
+  "weight": "1 l",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Oil/FortuneRiceBranOil.jpg"
+  ],
+  "description": "Fortune Rice Bran Health Oil is 100% Physically Refined Rice Bran Oil which is Rich in Gamma Oryzanol. It helps in reducing Bad Cholesterol & increases Good Cholesterol which is beneficial for your heart health. Along with Vitamin A/D/E it is rich in Natural Antioxidants which boosts immunity and gives many other health benefits to every member of the family. It is best suited for Indian Cooking as it has high smoke point which is ideal for deep frying/ stir frying",
+  "date": {
+    "$date": "2023-05-24T11:39:48.710Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df7d31c9784c2d87f734a"
+  },
+  "name": "Gemini Filtered Groundnut Oil",
+  "category": {
+    "category": "Oil",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcf8cc81ce3603ecf519"
+    }
+  },
+  "price": 220,
+  "weight": "1 l",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Oil/GeminiFilteredGroundnutOil.jpg"
+  ],
+  "description": "Gemini Filtered Groundnut oil is sourced from the very best in Saurashtra, bringing to your food that great tinge of sweetness and aroma. Added to that is Cargill's stamp of quality assurance, ensuring your every meal is replete with taste and health. Wonderfully pleasant, sweet-flavored peanut oil is low in saturated fats, free from cholesterol, contains essential fatty acid ( linoleic acid (omega-6)) making it as one of the healthiest cooking oils.",
+  "date": {
+    "$date": "2023-05-24T11:41:07.167Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df8291c9784c2d87f7360"
+  },
+  "name": "Gemini Refined Sunflower Oil",
+  "category": {
+    "category": "Oil",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcf8cc81ce3603ecf519"
+    }
+  },
+  "price": 825,
+  "weight": "5 l",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Oil/GeminiRefinedSunflowerOil.jpg"
+  ],
+  "description": "Gemini Sunflower Oil comes with NutriFreshLock Technology that helps to retain the nutrients and freshness of your food for long time; unlocking time for you to chase your dreams.",
+  "date": {
+    "$date": "2023-05-24T11:42:33.799Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646df8e71c9784c2d87f7376"
+  },
+  "name": "Oleev Pomace Olive Oil",
+  "category": {
+    "category": "Oil",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dcf8cc81ce3603ecf519"
+    }
+  },
+  "price": 3999,
+  "weight": "5 l",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Oil/OleevPomaceOliveOil.jpg"
+  ],
+  "description": "Oleev Pomace Olive Oil is a light and healthy oil that has a high smoking point which makes it ideal for both deep and shallow frying food. Most suitable oil for cooking Indian cuisine as it keeps you healthy while keeping the flavour of the food intact. This light oil has a high amount of monounsaturated fatty acids that promote weight loss and help regulate blood sugar. This oil has a neutral taste and smell that will not alter the flavour of your dish. Can also be used for roasting, grilling, stir-frying, and sauteing.",
+  "date": {
+    "$date": "2023-05-24T11:45:43.225Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0a531c9784c2d87f738c"
+  },
+  "name": "Everest Chicken Masala",
+  "category": {
+    "category": "Spices",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dce8cc81ce3603ecf517"
+    }
+  },
+  "price": 88,
+  "weight": "100 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Spices/EverestChickenMasala.jpg"
+  ],
+  "description": "Everest chicken masala is the ultimate spice for preparing delectable chicken curry that gives the right balance between the spice-elements and other ingredients in the dish. The spices used in this blend provide several health benefits. Build Muscles and increases Appetite. Keeps bones healthy and improves Immunity. Cuts Risk Of Arthritis.",
+  "date": {
+    "$date": "2023-05-24T13:00:03.035Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0afa1c9784c2d87f73aa"
+  },
+  "name": "Everest Garam Masala",
+  "category": {
+    "category": "Spices",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dce8cc81ce3603ecf517"
+    }
+  },
+  "price": 94,
+  "weight": "100 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Spices/EverestGaramMasala.jpg"
+  ],
+  "description": "Everest Garam Masala is a select blend of 13 spices true to traditional and authentic taste. Garam Masala is known world over as a go to flavour enhancer in Indian cuisine. It is widely used all over India on account of its being a less pungent garam masala. Fennel, Tejpatta (Cinnamon leaves) and Trifala imparts a cooling effect to this blend. It is used essentially for preparing vegetarian dishes requiring a gravy. Gujarati and Marwari cuisine normally utilize it in lentils (dal) and for filling in snacks such as samosa, usal, patra, farsan etc. Made from carefully sourced ingredients in a modern hygienic facility.",
+  "date": {
+    "$date": "2023-05-24T13:02:50.679Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0b8c1c9784c2d87f73e4"
+  },
+  "name": "Everest Sambhar Masala",
+  "category": {
+    "category": "Spices",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dce8cc81ce3603ecf517"
+    }
+  },
+  "price": 70,
+  "weight": "100 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Spices/EverestSambharMasala.jpg"
+  ],
+  "description": "Everest Sambhar Masala uses a unique blend of spices to provide teh authentic flavour of south Indian delicacy sambhar. This ready to use powder is ideal for the modern kitchen. Prepared from the best quality spices blended in a modern facility. Can be used to prepare accomponiment for rice, idli, dosa, vada and more. Excellent addition to diet food.",
+  "date": {
+    "$date": "2023-05-24T13:05:16.488Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0bce1c9784c2d87f73fa"
+  },
+  "name": "Everest Tikhalal Red Chilli Powder",
+  "category": {
+    "category": "Spices",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dce8cc81ce3603ecf517"
+    }
+  },
+  "price": 136,
+  "weight": "200 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Spices/EverestTikhalalRedChilliPowder.jpg"
+  ],
+  "description": "Everest Tikhalal Red Chilli Powder adds a flavourful twist to everyday recipes. This finely grounded chilli powder is used in a variety of preparations to impart a rich colour and texture.",
+  "date": {
+    "$date": "2023-05-24T13:06:22.445Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0c251c9784c2d87f7410"
+  },
+  "name": "Everest Turmeric Powder/Haldi",
+  "category": {
+    "category": "Spices",
+    "tag": "Dry Fruits, Spices & Oil",
+    "_id": {
+      "$oid": "6411dce8cc81ce3603ecf517"
+    }
+  },
+  "price": 35,
+  "weight": "100 g",
+  "quantity": "50",
+  "image": [
+    "./assets/DryFruitsSpices&Oil/Spices/EverestTurmericPowder.jpg"
+  ],
+  "description": "One of the main ingredients that gives Indian food its taste, the Everest Turmeric Powder/Haldi adds an earthy flavour and lovely yellow colour to the food. The rich colour imparts a golden-yellow colour to all broths and curries. It is also a great ingredient to be used for medicinal purposes. A mild and healthy spice that imparts a golden-yellow colour to food. Has antiseptic properties and can be used for medicinal purposes as well.",
+  "date": {
+    "$date": "2023-05-24T13:07:49.050Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0d041c9784c2d87f7426"
+  },
+  "name": "24 Mantra Whole Wheat Organic Atta",
+  "category": {
+    "category": "Atta",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd11cc81ce3603ecf51b"
+    }
+  },
+  "price": 350,
+  "weight": "5 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Atta/24MantraWholeWheatOrganicAtta.jpg"
+  ],
+  "description": "Made from the choicest whole wheat. Fresh and pure wholesome flour. Grounded carefully to perfection. Packed with natural flavour. Rich in essential vitamins and extra fibre. Makes soft and fluffy rotis with a whole lot of health.",
+  "date": {
+    "$date": "2023-05-24T13:11:32.563Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0d6c1c9784c2d87f743c"
+  },
+  "name": "Aashirvaad Multigrain Atta",
+  "category": {
+    "category": "Atta",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd11cc81ce3603ecf51b"
+    }
+  },
+  "price": 352,
+  "weight": "5 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Atta/AashirvaadMultigrainAtta.jpg"
+  ],
+  "description": "Aashirvaad Atta with Multigrains is a high fibre atta that aids digestion. It's made with the choicest grains sourced from fields across India. It's made with 6 grains – wheat, maize, oats, soya, channa & psyllium husk. Just 3 rotis fulfill 35% of your daily fibre intake. Fibre content is same as in 6 carrots or 4 beetroots. Make chapatis, paranthas, pooris that taste just like your regular atta.",
+  "date": {
+    "$date": "2023-05-24T13:13:16.848Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0dca1c9784c2d87f7454"
+  },
+  "name": "Organic Tattva Multigrain Organic Atta",
+  "category": {
+    "category": "Atta",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd11cc81ce3603ecf51b"
+    }
+  },
+  "price": 95,
+  "weight": "1 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Atta/OrganicTattvaMultigrainOrganicAtta.jpg"
+  ],
+  "description": "Organic Tattva Organic Multigrain Atta is a great choice for healthy eating as it combines the goodness of wheat with other grains like brown gram, Psyllium Husk and Jowar. It is a super food considering the mix of grains it has which gives all the protein, fiber and carbohydrates needed. The rich texture makes it a good choice for making soft rotis and phulkas",
+  "date": {
+    "$date": "2023-05-24T13:14:50.430Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0e171c9784c2d87f7470"
+  },
+  "name": "Organic Tattva Wheat Organic Atta",
+  "category": {
+    "category": "Atta",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd11cc81ce3603ecf51b"
+    }
+  },
+  "price": 375,
+  "weight": "5 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Atta/OrganicTattvaWheatOrganicAtta5kg.jpg"
+  ],
+  "description": "Switch to Organic Tattva Wheat Atta to eat healthy. This atta is free from pesticides and harmful chemicals. The Atta is packed hygienically to ensure the best-quality. This whole wheat flour is full of iron, calcium, and proteins to keep you fit. It contains complex carbohydrates that keep you feeling full for longer. Use it to make soft, fluffy phulkas or rotis and enjoy it with a curry of your choice.",
+  "date": {
+    "$date": "2023-05-24T13:16:07.554Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0e661c9784c2d87f7486"
+  },
+  "name": "Pillsbury Chakki Fresh Atta",
+  "category": {
+    "category": "Atta",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd11cc81ce3603ecf51b"
+    }
+  },
+  "price": 258,
+  "weight": "5 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Atta/PillsburyChakkiFreshAtta.jpg"
+  ],
+  "description": "Experience the 3 fingers softness of rotis with the all - natural 100% whole wheat Atta. Pillsbury Chakki Fresh Atta is made of high - quality wheat, locally sourced from India’s finest wheat fields and does not contain maida. Make delicious homemade rotis that are always soft and always delicious with the help of Pillsbury Atta, made in India from the highest Quality Ingredients.",
+  "date": {
+    "$date": "2023-05-24T13:17:26.800Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0ef21c9784c2d87f749c"
+  },
+  "name": "24 Mantra Organic Kabuli Chana",
+  "category": {
+    "category": "Dal",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd22cc81ce3603ecf51f"
+    }
+  },
+  "price": 150,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Dal/24MantraOrganicKabuliChana.jpg"
+  ],
+  "description": "Carefully picked for the highest quality Smooth in texture Rich in potassium and dietary fibre Used in the variety of preparations",
+  "date": {
+    "$date": "2023-05-24T13:19:46.225Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0f3e1c9784c2d87f74b2"
+  },
+  "name": "Grocery Chana Dal",
+  "category": {
+    "category": "Dal",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd22cc81ce3603ecf51f"
+    }
+  },
+  "price": 120,
+  "weight": "1 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Dal/GroceryChanaDal.jpg"
+  ],
+  "description": "Chana dal is rich in B-complex vitamins that play an important role in glucose metabolism and are vital for your body to remain active and energetic. It is also essential for the heart as it is rich in antioxidants and reduces inflammation keeping the organ healthy.",
+  "date": {
+    "$date": "2023-05-24T13:21:02.840Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0fac1c9784c2d87f74c8"
+  },
+  "name": "Grocery Urad Gota",
+  "category": {
+    "category": "Dal",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd22cc81ce3603ecf51f"
+    }
+  },
+  "price": 150,
+  "weight": "1 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Dal/GroceryUradGota.jpg"
+  ],
+  "description": "Premium quality grains. Power-packed legume with amazing nutrients and protein. Tasty and wholesome. Often used in preparing South Indian recipes like Idlis, Papad, Vadas, Dosas etc.",
+  "date": {
+    "$date": "2023-05-24T13:22:52.035Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e0ff41c9784c2d87f74de"
+  },
+  "name": "Natureland Organic Chana Dal",
+  "category": {
+    "category": "Dal",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd22cc81ce3603ecf51f"
+    }
+  },
+  "price": 90,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Dal/NaturelandOrganicChanaDal.jpg"
+  ],
+  "description": "Natural and Organic Chana Dal",
+  "date": {
+    "$date": "2023-05-24T13:24:04.219Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e10571c9784c2d87f74f4"
+  },
+  "name": "Tata Sampann Urad Dal",
+  "category": {
+    "category": "Dal",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd22cc81ce3603ecf51f"
+    }
+  },
+  "price": 100,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Dal/TataSampannUradDal.jpg"
+  ],
+  "description": "Tata Sampann Dhuli White Urad Dal is a healthy and delicious choice, this lentil can be used in cooking variety of Indian dishes, processed from premium-quality grains for a great and wholesome taste, it is a rich source of protein for the body, a high-nutrition lentil that contains essential minerals like potassium, iron, magnesium, and phosphorous, use it to make dishes like Idlis, Papad, Vadas, Dosas etc.",
+  "date": {
+    "$date": "2023-05-24T13:25:43.591Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e10f51c9784c2d87f750a"
+  },
+  "name": "Daawat Hyderabadi Biryani Kit",
+  "category": {
+    "category": "Rice",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd1acc81ce3603ecf51d"
+    }
+  },
+  "price": 146,
+  "weight": "334 g",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Rice/DaawatKolkataBiryaniKit.jpg"
+  ],
+  "description": "No Preservatives. No added colors. Spicy flavour. Ready in 3 easy steps and 30 minutes.",
+  "date": {
+    "$date": "2023-05-24T13:28:21.595Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e11761c9784c2d87f7520"
+  },
+  "name": "Daawat Pulav Basmati Rice",
+  "category": {
+    "category": "Rice",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd1acc81ce3603ecf51d"
+    }
+  },
+  "price": 85,
+  "weight": "500 g",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Rice/DaawatPulavBasmatiRice.jpg"
+  ],
+  "description": "Enriched in fibre.Controls blood sugar.Good for bone health.Aids in weight loss",
+  "date": {
+    "$date": "2023-05-24T13:30:30.917Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e11fa1c9784c2d87f7536"
+  },
+  "name": "Daawat Raw Sonamasuri Rice",
+  "category": {
+    "category": "Rice",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd1acc81ce3603ecf51d"
+    }
+  },
+  "price": 816,
+  "weight": "10 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Rice/DaawatRawSonamasuriRice.jpg"
+  ],
+  "description": "Distinctive nutty taste.Light, fluffy texture with short grains.Naturally aromatic.Tasty and healthy.",
+  "date": {
+    "$date": "2023-05-24T13:32:42.602Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e125b1c9784c2d87f754c"
+  },
+  "name": "Fortune Hamesha Basmati Rice",
+  "category": {
+    "category": "Rice",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd1acc81ce3603ecf51d"
+    }
+  },
+  "price": 425,
+  "weight": "5 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Rice/FortuneHameshaBasmatiRice.jpg"
+  ],
+  "description": "Broken Basmati Rice is best for daily consumption. It offers the irresistible taste of basmati rice at an irresistible price. Bring home the goodness of basmati and enjoy the savory rice dishes. Hamesha! Every grain of Rice is carefully aged, dried, de-husked, processed, graded, and sorted with a sophisticated color sorting machine at our state-of-the-art plant before being packed.",
+  "date": {
+    "$date": "2023-05-24T13:34:19.438Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646e12b61c9784c2d87f7564"
+  },
+  "name": "Grocery Wada Kolam Rice",
+  "category": {
+    "category": "Rice",
+    "tag": "Atta, Rice & Dal",
+    "_id": {
+      "$oid": "6411dd1acc81ce3603ecf51d"
+    }
+  },
+  "price": 850,
+  "weight": "10 kg",
+  "quantity": "50",
+  "image": [
+    "./assets/AttaRice&Dal/Rice/GroceryWadaKolamRice.jpg"
+  ],
+  "description": "The Wada Kolam is also known as Zini rice. It is used as the main ingredient with dishes like fish, poultry, meat, etc",
+  "date": {
+    "$date": "2023-05-24T13:35:50.303Z"
+  },
+  "__v": 0
+}]
