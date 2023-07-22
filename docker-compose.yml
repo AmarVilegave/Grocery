@@ -1,0 +1,41 @@
+version : '3' #Docker Compose version
+
+services:
+  frontend:
+    build: ./frontend
+    ports: 
+      - "4200:4200"
+    networks:
+      - mean-app
+  backend:
+    build: ./backend
+    ports:
+      - "8088:8088"
+    environment:
+      - grocery_jwtPrivateKey=xnfccJngF0OwoSX80c96pw
+    links:
+      - "database"
+    depends_on:
+      - database
+    networks:
+      - mean-app
+  database:
+    build:
+      context: ./database
+      args:
+        - DATABASE_URI=mongodb://mongodb:27017/grocery-shopping
+    depends_on:
+      - mongo
+    networks:
+      - mean-app
+  mongo:
+    container_name: mongodb
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      - mean-app
+
+networks:
+  mean-app:
+    driver: bridge

@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "645763bfa7602a2ec9b3f8ff"
+  },
+  "fullName": "Amar Vilegave",
+  "email": "amar.vilegave01@gmail.com",
+  "password": "$2b$10$iumQKF9dina2LuqygpycjeBMye.a4o6A6i8WSVcYmSB1p4zIisKKe",
+  "mobileNo": 1234567890,
+  "role": "admin",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645763e2a7602a2ec9b3f902"
+  },
+  "fullName": "Bhushan Nadkar",
+  "email": "bhushan.nadkar01@gmail.com",
+  "password": "$2b$10$F65NrZ8jviYGanNeUNWB9.aoL8ruT0eHvrFjFG.vZkyMaOXglP7/K",
+  "mobileNo": 1234567890,
+  "role": "super admin",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6457640da7602a2ec9b3f905"
+  },
+  "fullName": "Shubham Mahamuni",
+  "email": "shubham.mahamuni01@gmail.com",
+  "password": "$2b$10$nmy1OESxMD7xhDLASOD68OHZ0bRZlHKMMbq0Q4I0u8zcZE1uTpfbi",
+  "mobileNo": 1234567890,
+  "role": "moderator",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646f4618e64dcac7949793f2"
+  },
+  "fullName": "Nachiket Kelkar",
+  "email": "nachiket.kelkar01@gmail.com",
+  "password": "$2b$10$o8Pe2NH2edOzdSmoWeDi4eLZ5bTpt3ACG3Gk/J2ScWoSX5atRG.IK",
+  "mobileNo": 1234567890,
+  "role": "admin",
+  "__v": 0
+}]
