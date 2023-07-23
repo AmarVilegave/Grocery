@@ -15,6 +15,9 @@ import { Router } from '@angular/router';
 })
 export class UserRegistrationPageComponent implements OnInit {
 
+  minDate:string="1950-01-01";
+  maxDate:string ="2010-01-01";
+
   constructor(private fb: FormBuilder,
     private loginService:LoginService,
     private router:Router) { }
@@ -53,7 +56,6 @@ export class UserRegistrationPageComponent implements OnInit {
     };
 
     this.loginService.registerUser(newUser);
-    alert('User Registered Successfully');
     setTimeout(() => {
       this.loginService.tokenFromSessionStorage().subscribe((data: any) => {
         if (!data.error) {
@@ -83,7 +85,6 @@ export class UserRegistrationPageComponent implements OnInit {
     let controlErrors: ValidationErrors = [];
     Object.keys(dataObj.controls || {}).forEach((key) => {
       if (typeof dataObj.get(key).value !== 'object') {
-        console.log(dataObj.get(key).errors);
         if (dataObj.get(key).errors) {
           controlErrors.push(dataObj.get(key).errors);
         }

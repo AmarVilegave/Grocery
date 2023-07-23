@@ -12,7 +12,7 @@
   </div>
 </div>
 
-<div *ngIf="orders.length" class="user-orders-container">
+<div *ngIf="orders.length" class="user-orders-container" [ngClass]="{'height':orders.length >= 4}">
   <div class="container">
     <div *ngFor="let order of orders" class="orders-container">
       <div class="order-details-container">

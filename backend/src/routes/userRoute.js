@@ -19,7 +19,7 @@ const {
   
     const user = await UserModel.findOne({ email });
     if (user) {
-      res.status(400).send("User already exist, please login");
+      res.status(400).send("This EmailID is already registered");
       return;
     }
   

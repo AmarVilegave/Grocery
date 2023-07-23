@@ -34,7 +34,7 @@ export class LoginService {
     this.http
       .post<any>(USER_URL, newUser, { observe: 'response' })
       .subscribe((data) => {
-        this.setJwtTokenTOSessionStorage(data);
+        this.setJwtTokenToSessionStorage(data);
         localStorage.setItem(
           'User',
           JSON.stringify({
@@ -44,6 +44,10 @@ export class LoginService {
           })
         );
         this.setUserDataToLocalStorage(data);
+        alert('User Registered Successfully');
+      },
+      (error) => {
+        alert(error.error);
       });
   }
 
@@ -52,7 +56,11 @@ export class LoginService {
     this.http
       .post<AdminModel>(ADMIN_URL, newAdmin, { observe: 'response' })
       .subscribe((data) => {
-        console.log(data);
+        alert('Admin registered successfully')
+        window.location.reload();
+      },
+      (error) => {
+        alert(error.error);
       });
   }
 
@@ -70,7 +78,7 @@ export class LoginService {
   loginUser(userData: login): any {
     this.http.post<any>(LOGIN_URL, userData, { observe: 'response' }).subscribe(
       (data) => {
-        this.setJwtTokenTOSessionStorage(data);
+        this.setJwtTokenToSessionStorage(data);
         this.setUserDataToLocalStorage(data);
       },
       (error) => {
@@ -84,7 +92,7 @@ export class LoginService {
     this.http
       .post<any>(ADMIN_LOGIN_URL, userData, { observe: 'response' })
       .subscribe((data) => {
-        this.setJwtTokenTOSessionStorage(data);
+        this.setJwtTokenToSessionStorage(data);
         this.setAdminDataToLocalStorage(data);
       },
       (error) => {
@@ -92,7 +100,7 @@ export class LoginService {
       });
   }
 
-  setJwtTokenTOSessionStorage(data: any) {
+  setJwtTokenToSessionStorage(data: any) {
     sessionStorage.setItem(
       'token',
       JSON.stringify(data.headers.get('x-auth-token'))

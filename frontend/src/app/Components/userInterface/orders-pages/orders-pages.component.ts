@@ -4,6 +4,8 @@ import { OrderModel } from 'src/app/shared/classes/OrderModel';
 import { Observable } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { ViewOrderComponent } from '../view-order/view-order.component';
+import { SessionUserModel } from 'src/app/shared/classes/SessionUserModel';
+import { LoginService } from 'src/app/Services/login.service';
 
 @Component({
   selector: 'app-orders-pages',
@@ -13,18 +15,25 @@ import { ViewOrderComponent } from '../view-order/view-order.component';
 export class OrdersPagesComponent implements OnInit {
   convenienceFee: number = 50;
   orders: OrderModel[] = [];
+  userOrders:OrderModel[]=[];
+  user!:SessionUserModel;
 
 
   constructor(private orderService:OrderService,
+    private loginService:LoginService,
     private _viewOrderDialog: MatDialog
     ) {
-    let ordersObservable: Observable<OrderModel[]>;
-    ordersObservable = this.orderService.getAllOrders();
+      this.loginService.getUserObservable().subscribe((sessionUser) => {
+        this.user = sessionUser;
+  });
 
+    let ordersObservable: Observable<OrderModel[]>;
+
+    ordersObservable = this.orderService.getOrderByEmail(this.user.email);
     ordersObservable.subscribe((serverOrders) => {
-      this.orders = serverOrders;
-      console.log('server orders :', this.orders);
-    });
+      this.orders = serverOrders
+    })
+
   }
 
   ngOnInit(): void {
@@ -44,6 +53,12 @@ export class OrdersPagesComponent implements OnInit {
     orderDialog.afterClosed().subscribe((response) => {
       console.log('Closed', response);
     });
+  }
+
+  getUserOrders() {
+    this.userOrders = this.orders.filter((value) => {
+      value.user.email === this.user.email
+    })
   }
 
 }

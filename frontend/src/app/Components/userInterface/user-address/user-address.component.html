@@ -183,7 +183,7 @@
   </div>
 </div>
 
-<div *ngIf="!toggle && isTokenValid" class="addresses-container">
+<div *ngIf="!toggle && isTokenValid" class="addresses-container" [ngClass]="{'height':user.addresses.length >= 4}" >
   <div class="container">
     <div class="address-content">
       <div class="title-btn-container">

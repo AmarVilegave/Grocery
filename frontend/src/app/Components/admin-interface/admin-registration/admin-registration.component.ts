@@ -79,8 +79,6 @@ export class AdminRegistrationComponent implements OnInit {
       role: this.adminRegistrationForm.get('role').value,
     };
     this.loginService.registerAdmin(newAdmin);
-    alert('Admin Registered Successfully');
-    window.location.reload();
   }
 
 

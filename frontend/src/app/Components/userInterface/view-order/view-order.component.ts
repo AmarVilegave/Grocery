@@ -12,7 +12,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./view-order.component.css']
 })
 export class ViewOrderComponent implements OnInit {
-  order: OrderModel = new OrderModel();
+  order: OrderModel;
 
   constructor(private orderService:OrderService,
     private activatedRoute:ActivatedRoute,
@@ -20,8 +20,7 @@ export class ViewOrderComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any) {
       if (data._id) {
         orderService.getOrderById(data._id).subscribe((order) => {
-          this.order = order;
-          console.log('view-order-page :', this.order);
+          this.order = order
         });
       }
      }

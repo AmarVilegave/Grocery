@@ -23,8 +23,20 @@ router.post("/", async (req, res) => {
   res.send(order);
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:email", async (req, res) => {
+  console.log('req.params.email',req.params.email)
+  const order = await OrderModel.find({"user.email":req.params.email});
+  console.log('user order', order)
+
+  if (!order)
+    return res.status(400).send("The Order with the given ID was not found");
+
+  res.send(order);
+});
+
+router.get("/id/:id", async (req, res) => {
   const order = await OrderModel.findById(req.params.id);
+  console.log('user order', order)
 
   if (!order)
     return res.status(400).send("The Order with the given ID was not found");

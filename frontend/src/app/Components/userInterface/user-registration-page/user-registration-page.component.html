@@ -187,6 +187,8 @@
                 "
                 formControlName="dateOfBirth"
                 type="date"
+                [min]="minDate"
+                [max]="maxDate"
               />
               <div
                 [class.noDisplay]="

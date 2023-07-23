@@ -5,7 +5,7 @@ import { Cart } from '../shared/classes/Cart';
 import { SessionUserModel } from '../shared/classes/SessionUserModel';
 import { databaseAddress } from '../shared/interfaces/databaseAddress';
 import { HttpClient } from '@angular/common/http';
-import { ORDER_BY_ID_URL, ORDER_URL } from '../shared/constants/urls';
+import { ORDER_BY_EMAIL_URL, ORDER_URL, ORDER_BY_ID_URL } from '../shared/constants/urls';
 import { Observable } from 'rxjs';
 
 
@@ -22,6 +22,10 @@ export class OrderService {
     return this.http.get<OrderModel[]>(ORDER_URL);
   }
 
+  getOrderByEmail(userEmail: string) {
+    return this.http.get<OrderModel[]>(ORDER_BY_EMAIL_URL + userEmail);
+  }
+
   getOrderById(orderId: string) {
     return this.http.get<OrderModel>(ORDER_BY_ID_URL + orderId);
   }
@@ -35,7 +39,6 @@ export class OrderService {
 
   proceedToPayment(address: databaseAddress) {
     this.order.user.addresses = address;
-    console.log(this.order.user.addresses);
   }
 
   confirmOrder(paymentMode: string) {

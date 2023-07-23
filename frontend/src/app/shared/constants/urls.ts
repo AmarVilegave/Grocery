@@ -15,4 +15,5 @@ export const ADMIN_URL_BY_ID_URL = ADMIN_URL + '/';
 export const LOGIN_URL = BASE_URL + '/api/login';
 export const ADMIN_LOGIN_URL = LOGIN_URL + '/admin-login';
 export const ORDER_URL = BASE_URL + '/api/orders';
-export const ORDER_BY_ID_URL = ORDER_URL + '/';
+export const ORDER_BY_EMAIL_URL = ORDER_URL + '/';
+export const ORDER_BY_ID_URL = ORDER_URL +'/id/'
