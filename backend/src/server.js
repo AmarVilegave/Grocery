@@ -23,7 +23,9 @@ mongoose
   .catch((err) => console.error("Could not connect to MongoDB : " + err));
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'http://16.171.146.29:4200'
+}));
 app.use("/api/categories", categories);
 app.use("/api/products", products);
 app.use("/api/admin", admin);
