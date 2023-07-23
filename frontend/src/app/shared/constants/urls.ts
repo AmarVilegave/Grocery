@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8088';
+const BASE_URL = 'http://127.0.0.1:8088';
 
 export const CATEGORIES_URL = BASE_URL + '/api/categories';
 export const CATEGORY_BY_ID_URL = CATEGORIES_URL + '/';
