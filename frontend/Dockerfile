@@ -2,11 +2,11 @@ FROM node:16-alpine
 
 WORKDIR /usr/src/frontend
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm i
 
-COPY . .
+COPY ./ ./
 
 EXPOSE 4200
 

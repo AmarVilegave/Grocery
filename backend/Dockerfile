@@ -2,11 +2,11 @@ FROM node:16-alpine as backend
 
 WORKDIR /usr/src/backend
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm i
 
-COPY . .
+COPY ./ ./
 
 EXPOSE 8088
 
