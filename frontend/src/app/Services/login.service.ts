@@ -52,7 +52,6 @@ export class LoginService {
   }
 
   registerAdmin(newAdmin: databaseAdmin) {
-    console.log('service admin :', newAdmin);
     this.http
       .post<AdminModel>(ADMIN_URL, newAdmin, { observe: 'response' })
       .subscribe((data) => {
@@ -70,9 +69,7 @@ export class LoginService {
       sessionUser.addresses.push(updatedAddress);
       this.updateUserDataToLocalStorage(sessionUser);
     }
-    this.http.put(USER_BY_ID_URL + userId, updatedAddress).subscribe((data) => {
-      console.log(data);
-    });
+    this.http.put(USER_BY_ID_URL + userId, updatedAddress).subscribe((data) => {});
   }
 
   loginUser(userData: login): any {

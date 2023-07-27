@@ -84,14 +84,12 @@ export class WishlistService {
       this.wishlist.push(item);
       this.http
         .put(USER_WISHLIST_URL + userId, wishlistProduct)
-        .subscribe((data) => {
-        });
+        .subscribe((data) => {});
     } else {
       this.wishlist = this.wishlist.filter((ele) => ele._id !== item._id);
       this.http
         .put(USER_WISHLIST_URL + userId, wishlistProduct)
-        .subscribe((data) => {
-        });
+        .subscribe((data) => {});
     }
   }
 }

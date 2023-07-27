@@ -22,9 +22,7 @@ export class AdminService {
   addNewCategoryAndTag(newCategoryAndTag: databaseCategory) {
     this.http
       .post<Category>(CATEGORIES_URL, newCategoryAndTag)
-      .subscribe((newCategoryAndTag) => {
-        console.log(newCategoryAndTag);
-      });
+      .subscribe((newCategoryAndTag) => {});
   }
 
   updateCategoryAndTag(
@@ -33,40 +31,30 @@ export class AdminService {
   ) {
     this.http
       .put<Category>(CATEGORY_BY_ID_URL + categoryId, updatedCategoryAndTag)
-      .subscribe((data) => {
-        console.log(data);
-      });
+      .subscribe((data) => {});
   }
 
   removeCategoryAndTag(categoryId: string) {
     this.http
       .delete<Category>(CATEGORY_BY_ID_URL + categoryId)
-      .subscribe((data) => {
-        console.log(data);
-      });
+      .subscribe((data) => {});
   }
 
   addNewProduct(newProduct: databaseProduct): void {
     this.http
       .post<Product>(PRODUCTS_URL, newProduct)
-      .subscribe((newProduct) => {
-        console.log(newProduct);
-      });
+      .subscribe((newProduct) => {});
   }
 
   updateProduct(productId: string, updatedProduct: databaseProduct): void {
     this.http
       .put<Product>(PRODUCT_BY_ID_URL + productId, updatedProduct)
-      .subscribe((data) => {
-        console.log(data);
-      });
+      .subscribe((data) => {});
   }
 
   removeProduct(productId: string) {
     this.http
       .delete<Product>(PRODUCT_BY_ID_URL + productId)
-      .subscribe((data) => {
-        console.log(data);
-      });
+      .subscribe((data) => {});
   }
 }

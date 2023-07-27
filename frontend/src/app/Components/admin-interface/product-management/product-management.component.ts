@@ -37,7 +37,6 @@ export class ProductManagementComponent implements OnInit {
     categoriesObservable = productService.getAllCategories();
     categoriesObservable.subscribe((serverCategories) => {
       this.categories = serverCategories;
-      console.log(this.categories);
       this.getTagsFromCategory();
     });
     this.productDetailsForm
@@ -81,7 +80,6 @@ export class ProductManagementComponent implements OnInit {
     let controlErrors: ValidationErrors = [];
     Object.keys(dataObj.controls || {}).forEach((key) => {
       if (typeof dataObj.get(key).value !== 'object') {
-        // console.log(dataObj.get(key).errors);
         if (dataObj.get(key).errors) {
           controlErrors.push(dataObj.get(key).errors);
         }

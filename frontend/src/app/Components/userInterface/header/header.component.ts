@@ -44,8 +44,6 @@ export class HeaderComponent implements OnInit {
   }
 
   removeUserDataAndToken() {
-    console.log('admin :', this.admin);
-    console.log('user', this.user);
     if (this.user) {
       this.loginService.removeUserDataAndToken();
       this.addService.removeCartFromLocalStorage();
@@ -63,9 +61,6 @@ export class HeaderComponent implements OnInit {
       this.loginService.removeAdminDataAndToken();
     }
 
-    console.log('logged out admin :', this.admin);
-    console.log('logged out user', this.user);
-    // window.location.reload();
   }
 
 

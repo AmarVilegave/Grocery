@@ -18,7 +18,6 @@ export class WishlistPageComponent implements OnInit {
     wishlistObservable.subscribe((serverWishlist) => {
       this.wishlist = serverWishlist;
 
-      console.log('wishlist', this.wishlist);
     });
   }
 

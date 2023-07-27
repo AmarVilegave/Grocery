@@ -14,12 +14,10 @@ export class FooterComponent implements OnInit {
   selectedTag: string;
 
   constructor(private productService:ProductService) {
-    console.log('categories', this.categories)
     let categoryObservable: Observable<Category[]>;
     categoryObservable = this.productService.getAllCategories();
     categoryObservable.subscribe((serverCategories) => {
       this.categories = serverCategories;
-      console.log('categories', this.categories)
     });
 
     let selectedCategoryObservable: Observable<string>;
@@ -45,13 +43,10 @@ export class FooterComponent implements OnInit {
   }
 
   selectActiveCategoryAndTag(category: string, tag: string) {
-    // console.log('footer tag', tag), (this.selectedTag = tag);
     this.selectedCategory = category;
     this.selectedTag = tag;
 
     if (this.selectedTag && this.selectedCategory) {
-      // console.log('footer selected tag', this.selectedTag);
-      // console.log('footer selected tag', this.selectedTag);
       this.selectCategoryAndTag(this.selectedCategory, this.selectedTag);
       return true;
     } else return false;

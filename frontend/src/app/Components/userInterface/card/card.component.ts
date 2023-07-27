@@ -43,11 +43,9 @@ export class CardComponent implements OnInit {
       let productsObservable: Observable<Product[]>;
     productsObservable = productService.getAll();
     productsObservable.subscribe((serverProduct) => {
-      console.log(serverProduct);
       this.products = serverProduct;
       this.mainProducts = serverProduct;
       activatedRoute.params.subscribe((params) => {
-        console.log('params', params);
 
         if (params.tag) {
           this.products = this.mainProducts.filter(
@@ -122,9 +120,7 @@ export class CardComponent implements OnInit {
 
   onAddAndRemoveFavorite(product: Product) {
     let sessionUser = this.user;
-    console.log(sessionUser);
     if (!sessionUser.email) {
-      console.log(sessionUser.email);
       alert('To add product in your wishlist please login');
     } else {
       this.wishlistService.onAddAndRemoveFavorite(product);

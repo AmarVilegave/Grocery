@@ -50,17 +50,13 @@ export class AddService {
     this.products.forEach((ele) => {
       if (ele._id === item._id) ele.quantity--;
     });
-    console.log(this.products);
   }
 
   onPlus(id: string) {
-    // if (quantity === 0) return;
     let product = this.products.find((ele) => ele._id === id);
-    console.log(product);
     if (product?.quantity === 0) return;
     else {
       this.cart.items.forEach((ele) => {
-        // console.log(ele);
         if (ele._id === id) {
           ele.quantity++;
           this.cart.totalQuantity++;

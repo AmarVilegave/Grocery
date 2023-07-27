@@ -50,9 +50,7 @@ export class OrdersPagesComponent implements OnInit {
       },
     });
 
-    orderDialog.afterClosed().subscribe((response) => {
-      console.log('Closed', response);
-    });
+    orderDialog.afterClosed().subscribe((response) => {});
   }
 
   getUserOrders() {

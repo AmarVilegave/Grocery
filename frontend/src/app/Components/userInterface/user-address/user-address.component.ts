@@ -32,7 +32,6 @@ export class UserAddressComponent implements OnInit {
     private router:Router,
     private addService:AddService) {
       this.loginService.tokenFromSessionStorage().subscribe((data: any) => {
-        console.log(data);
         if (data.error) {
           this.isTokenValid = false;
         } else {
@@ -41,14 +40,12 @@ export class UserAddressComponent implements OnInit {
       });
 
       this.loginService.getUserObservable().subscribe((sessionUser) => {
-        console.log('sessionUser :', sessionUser);
         this.user = sessionUser;
       });
 
       this.addService
       .getObservable()
       .subscribe((product) => (this.cart = product));
-      console.log('user', this.user)
      }
 
   addressDetailsForm = this.fb.group({
@@ -66,7 +63,6 @@ export class UserAddressComponent implements OnInit {
     let controlErrors: ValidationErrors = [];
     Object.keys(dataObj.controls || {}).forEach((key) => {
       if (typeof dataObj.get(key).value !== 'object') {
-        console.log(dataObj.get(key).errors);
         if (dataObj.get(key).errors) {
           controlErrors.push(dataObj.get(key).errors);
         }
@@ -87,7 +83,6 @@ export class UserAddressComponent implements OnInit {
 
   changeAddress(address: databaseAddress) {
     this.selectedAddress = address;
-    console.log('address :', this.selectedAddress);
   }
 
   onSubmit(userId: string) {

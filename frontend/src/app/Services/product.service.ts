@@ -70,17 +70,13 @@ export class ProductService {
   }
 
   setNewTag(tag: string) {
-    console.log('service set new tag', tag);
     this.selectedTag = tag;
     this.tagSubject.next(tag);
-    console.log('service select tag', this.selectedTag);
   }
 
   selectNewCategory(category: string) {
-    console.log('service category', category);
     this.selectedCategory = category;
     this.categorySubject.next(category);
-    console.log('service selected category', this.selectedCategory);
   }
 
   onAddToggle() {

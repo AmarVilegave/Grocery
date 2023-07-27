@@ -39,7 +39,6 @@ export class ProductPageComponent implements OnInit {
       if (params.id)
         productService.getProductById(params.id).subscribe((product) => {
           this.item = product;
-          console.log(product);
         });
     });
 
@@ -56,7 +55,6 @@ export class ProductPageComponent implements OnInit {
     this.products.forEach((ele) => {
       if (ele._id === product._id) ele.quantity--;
     });
-    console.log(this.products);
   }
 
   onMinus(id: string, quantity: number) {

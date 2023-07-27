@@ -51,7 +51,6 @@ export class HomeComponent implements OnInit {
   }
 
   selectActiveTag(tag: string) {
-    console.log('home tag', tag);
     this.selectedTag = tag;
     if (this.selectedTag) {
       this.setNewTag(this.selectedTag);

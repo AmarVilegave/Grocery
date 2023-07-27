@@ -45,7 +45,6 @@ export class TagsComponent implements OnInit {
   selectActiveTag(tag: unknown) {
     this.serviceTag = tag as string;
     if (this.serviceTag) {
-      console.log('selected tag', this.serviceTag);
       this.setNewTag(this.serviceTag);
       return true;
     } else return false;

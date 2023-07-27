@@ -70,7 +70,6 @@ export class AdminRegistrationComponent implements OnInit {
   }
 
   registerAdmin() {
-    console.log('hello admin');
     const newAdmin = {
       fullName: this.adminRegistrationForm.get('fullName').value,
       email: this.adminRegistrationForm.get('email').value,

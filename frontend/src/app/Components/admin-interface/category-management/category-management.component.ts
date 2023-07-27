@@ -90,7 +90,6 @@ export class CategoryManagementComponent implements OnInit {
     this.categories.forEach((category) => {
       this.tagObject.add(category.tag);
     });
-    console.log(this.tagObject);
   }
 
   addNewCategoryAndTag() {
@@ -98,7 +97,6 @@ export class CategoryManagementComponent implements OnInit {
       category: this.categoryTagDetailsForm.get('category').value,
       tag: this.categoryTagDetailsForm.get('tag').value,
     };
-    console.log(this.category);
     this.adminService.addNewCategoryAndTag(newCategoryAndTag);
     alert('New category added successfully');
     window.location.reload();
@@ -112,7 +110,6 @@ export class CategoryManagementComponent implements OnInit {
     this.category.category = this.categoryTagDetailsForm.get('category').value;
     this.category.tag = this.categoryTagDetailsForm.get('tag').value;
 
-    console.log(updatedCategoryAndTag);
     this.adminService.updateCategoryAndTag(
       categoryId,
       updatedCategoryAndTag
